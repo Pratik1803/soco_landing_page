@@ -1,0 +1,41 @@
+.header {
+  width: 90vw;
+  //   height: 5vh;
+  //   background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5vh var(--padding-x);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--h-ul);
+  nav {
+    display: flex;
+    gap: 5vw;
+    h3 {
+      color: var(--soco-blue);
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      a {
+        text-decoration: none;
+        color: var(--fc-sec);
+        li {
+          list-style: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .loginSignup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    hr {
+      height: 30px;
+    }
+  }
+}
