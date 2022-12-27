@@ -3,18 +3,43 @@
 :root{
   --fc-pri: #2B2B2B;  /* Font color for headings */
   --fc-sec: #808598;  /* Font color for text */
-  --fs-pri: 48px;  /* Font size for headings */
-  --fs-sec: 24px;  /* Font size for  content*/
+  --fc-red: #E34D94;
+  --fc-violet: #7C77C9;
+  --fc-orange: #F97260;
+  --fc-green: #568A73;
+  --fc-blue: #109DB2;
+  --fc-yellow: #FFCA12;
+  --fs-pri:3vw;  /* Font size for headings */
+  --fs-sec: 1.25vw; /* Font size for  content*/
+  --fs-ter: 1.5vw;  
 
   /* Paddings and margins */
   --padding-x: 5vw; /* universal X-Axis padding  */
+  --padding-sec-y: 10vh; /* vertical padding for sections*/
+
 
   /* For Decorations */
   --h-ul : #E0E0E0; /* For underline border of header etc.*/
+  --btn-bg-blue: linear-gradient(180deg, #3986ff 0%, #0063ff 100%);/* For Blue btn background*/
+  --btn-shdw-blue: 0px 0px 15px rgba(0, 99, 255, 0.5);/* For blue btn shadow*/
+  --box-shdw-1: 0px 0px 25px rgba(0, 0, 0, 0.1);/* For students card on hero page*/
+  --box-shdw-2: 0px 0px 10px rgba(0, 0, 0, 0.05); /* For portrait circles on one for all section*/
 
   /* Colors */
-  --soco-blue: #0063ff; /* Signature color of soco */
+  --soco-blue: #0063ff; /* Signature color of soco */   
   --soco-db: #050020; /* Dark blue color for footer*/
+  --teal:#00BFFF;
+  --light-blue:#9be6ff;
+  --light-red: #FFB2D7;
+  --light-green: #96ED9C;
+  --light-orange: #FFC7BF;
+  --light-yellow: #FFF0BB;
+  --light-violet: #C2BEFF;
+
+  /* Gradients */
+  --gradient-violet:  linear-gradient(180deg, #C6C6FF 0%, #9F9FFF 100%);
+  --gradient-green: linear-gradient(180deg, #E0F8E1 0%, #B9FFBC 100%);
+  --gradient-blue:  linear-gradient(180deg, #BCD6FF 0%, #ACCCFF 100%);
 }
 
 *{
@@ -22,4 +47,25 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--fc-pri);
+}
+
+h1{
+  font-size: var(--fs-pri);
+}
+
+p,li{
+  color: var(--fc-sec);
+  font-size: var(--fs-sec);
+}
+
+@media only screen and (max-width:1100px){
+  :root{
+    --fs-pri:32px;  /* Font size for headings */
+  --fs-sec: 18px; /* Font size for  content*/
+  --fs-ter: 26px; 
+  }
 }

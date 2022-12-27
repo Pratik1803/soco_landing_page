@@ -1,0 +1,20 @@
+.link {
+  text-decoration: none;
+  color: #fff;
+  button {
+    padding: 10px 40px;
+    text-transform: none;
+    border-radius: 10px;
+    background: var(--btn-bg-blue);
+    box-shadow: var(--btn-shdw-blue);
+    p {
+      color: #fff;
+    }
+  }
+  .inverted {
+    background: #fff;
+    p {
+      color: var(--soco-blue) !important;
+    }
+  }
+}

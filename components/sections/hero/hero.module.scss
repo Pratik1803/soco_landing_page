@@ -1,5 +1,100 @@
 .hero {
-  height: calc(100vh - 10vh);
   width: 100%;
-  //   background-color: red;
+  min-height: calc(100vh - 10vh);
+  position: relative;
+  background-image: url("../../../assets/images/hero/dot-bg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  .portfolio,
+  .growth {
+    position: absolute;
+    top: 5vh;
+  }
+  .portfolio {
+    left: 0;
+  }
+  .growth {
+    right: 0;
+  }
+  .boi,
+  .girl {
+    position: absolute;
+    img {
+      height: 50vh;
+      object-fit: contain;
+    }
+  }
+  .boi {
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .girl {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-55%);
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    p {
+      width: 60%;
+      margin: 5vh auto;
+    }
+    button {
+      padding: 10px 40px;
+      text-transform: none;
+      border-radius: 10px;
+    }
+    .get_started {
+      background: var(--btn-bg-blue);
+      box-shadow: var(--btn-shdw-blue);
+      color: #fff;
+    }
+    .learn_more {
+      border: 2px solid var(--soco-blue);
+    }
+    .students {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      p {
+        color: var(--fc-pri);
+        font-size: 18px;
+        padding: 0;
+        white-space: nowrap;
+        margin: 0;
+      }
+      .student_card {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        box-shadow: var(--box-shdw-1);
+        padding: 10px 30px;
+        border-radius: 10px;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+    // background-color: red;
+  }
+  &::after {
+    position: absolute;
+    bottom: 7.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    height: 2px;
+    border-radius: 100px;
+    width: 60%;
+    background-color: var(--h-ul);
+  }
 }

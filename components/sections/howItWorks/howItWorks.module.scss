@@ -1,0 +1,70 @@
+.how_it_works {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-sec-y) 0;
+  .video {
+    width: 50%;
+    position: relative;
+    .bg {
+      background: var(--gradient-green);
+      position: absolute;
+      border-radius: 0px 20px 20px 0px;
+      bottom: 0px;
+      left: -5vw;
+      height: 80%;
+      width: 80%;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        border-radius: 0px 20px 20px 0px;
+        filter: blur(20px);
+        opacity: 0.5;
+      }
+    }
+  }
+  .content {
+    .card {
+      padding: 15px 20px;
+      border-radius: 5px;
+      background-color: red;
+      margin-bottom: 15px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        border-radius: 5px;
+        filter: blur(5px);
+        opacity: 0.5;
+      }
+      p {
+        color: var(--fc-pri);
+        font-weight: 600;
+        z-index: 2;
+      }
+    }
+    .card0 {
+      background: #fff5f4;
+    }
+    .card1 {
+      background: #eaffeb;
+    }
+    .card2 {
+      background: #e7f9ff;
+    }
+    .card3 {
+      background: #fffaeb;
+    }
+  }
+}

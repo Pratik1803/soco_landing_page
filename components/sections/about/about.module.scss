@@ -1,0 +1,37 @@
+.about {
+  width: 100%;
+  padding: var(--padding-sec-y) 0;
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .about_head {
+      .h1_wrapper {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: -80%;
+          height: 3px;
+          width: 100%;
+          border-radius: 10px;
+          background-color: var(--h-ul);
+        }
+      }
+      .image {
+        margin-top: 10px;
+        img {
+          width: 12.5vw;
+          height: 7.5vw;
+          //   height: 15vw;
+          object-fit: contain;
+        }
+      }
+    }
+    .content {
+      width: 70%;
+    }
+  }
+}

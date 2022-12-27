@@ -1,0 +1,333 @@
+.one_for_all {
+  width: 100%;
+  min-height: 130vh;
+  position: relative;
+  .floaters {
+    position: absolute;
+  }
+  .por {
+    width: 5vw;
+    height: 5vw;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shdw-2);
+    z-index: 2;
+    img {
+      width: 10vw;
+      height: 5vw;
+      object-fit: contain;
+      transform: scale(1.5);
+    }
+  }
+  .por1 {
+    top: 20px;
+    left: 20px;
+    background-color: var(--fc-orange);
+  }
+  .por2 {
+    bottom: 20px;
+    left: 25%;
+    background-color: var(--fc-yellow);
+  }
+  .por3 {
+    top: 30%;
+    left: 25%;
+    background-color: var(--fc-green);
+  }
+  .por4 {
+    top: 60%;
+    left: 5%;
+    background-color: var(--fc-violet);
+  }
+  .por5 {
+    top: 20px;
+    right: 20px;
+    background-color: var(--fc-blue);
+  }
+  .por6 {
+    bottom: 20px;
+    right: 25%;
+    background-color: var(--fc-red);
+  }
+  .por7 {
+    top: 30%;
+    right: 25%;
+    background-color: var(--fc-red);
+  }
+  .por8 {
+    top: 60%;
+    right: 5%;
+    background-color: var(--fc-green);
+  }
+
+  .card {
+    position: absolute;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: blue;
+    animation: oscillate 2s ease-in-out infinite;
+    p {
+      color: #fff;
+    }
+  }
+
+  .stud_card1 {
+    left: 20%;
+    top: 12.5%;
+    animation-delay: random($limit: 2);
+    background-color: var(--light-red);
+    p {
+      color: var(--fc-red);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card2 {
+    left: 5%;
+    top: 35%;
+    animation-delay: 0.2s;
+    background-color: var(--light-green);
+    p {
+      color: var(--fc-green);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card3 {
+    left: 20%;
+    top: 60%;
+    animation-delay: 0.8s;
+    background-color: var(--light-blue);
+    p {
+      color: var(--fc-blue);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card4 {
+    left: 5%;
+    top: 85%;
+    animation-delay: 0.4s;
+    background-color: var(--light-orange);
+    p {
+      color: var(--fc-orange);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card5 {
+    right: 20%;
+    top: 12.5%;
+    animation-delay: 0.6s;
+    background-color: var(--light-yellow);
+    p {
+      color: var(--fc-yellow);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card6 {
+    right: 5%;
+    top: 35%;
+    animation-delay: 0.6s;
+    background-color: var(--light-violet);
+    p {
+      color: var(--fc-violet);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card7 {
+    right: 20%;
+    top: 60%;
+    animation-delay: 0.2s;
+    background-color: var(--light-orange);
+    p {
+      color: var(--fc-orange);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card8 {
+    right: 5%;
+    top: 85%;
+    animation-delay: 0.8s;
+    background-color: var(--light-green);
+    p {
+      color: var(--fc-green);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+  .stud_card9 {
+    left: 45%;
+    top: 70%;
+    animation-delay: 0.4s;
+    background-color: var(--light-yellow);
+    p {
+      color: var(--fc-yellow);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 191, 255, 0.25);
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: breathe ease-in-out 3s infinite;
+    h1 {
+      background: linear-gradient(90deg, #00bfff 49.91%, #0063ff 78.95%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0px 4px 4px rgba(0, 99, 255, 0.1);
+    }
+  }
+  .bg2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 30vw;
+    background-color: rgba(0, 191, 255, 0.15);
+    border-radius: 50%;
+    animation: breathe ease-in-out 3s infinite;
+    animation-delay: 0.3s;
+  }
+  .bg1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    height: 45vw;
+    background-color: rgba(0, 191, 255, 0.1);
+    border-radius: 50%;
+    animation: breathe ease-in-out 3s infinite;
+    animation-delay: 0.6s;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
