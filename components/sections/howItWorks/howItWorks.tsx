@@ -30,8 +30,8 @@ function HowItWorks() {
     <section className={Styles.how_it_works}>
       <div className={Styles.video}>
         <div className={Styles.bg}></div>
-        <video autoPlay loop style={{ width: "500px", height: "500px" }}>
-          <source src="/assets/videos/owItWorks/hiw.mp4" />
+        <video autoPlay loop controls muted>
+          <source src="https://d1ifbi2yr6p9bt.cloudfront.net/2156151/1671741749025-a996177b450592691c273565a9cbc2ad.mp4?v=1671722380000" />
         </video>
       </div>
       <div className={Styles.content}>
@@ -43,8 +43,8 @@ function HowItWorks() {
         </p>
         <br />
         <div className={Styles.video_mob}>
-          <video autoPlay loop>
-            <source src="/assets/videos/owItWorks/hiw.mp4" />
+          <video autoPlay loop controls muted>
+            <source src="https://d1ifbi2yr6p9bt.cloudfront.net/2156151/1671741749025-a996177b450592691c273565a9cbc2ad.mp4?v=1671722380000" />
           </video>
         </div>
         <br />

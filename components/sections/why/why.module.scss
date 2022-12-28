@@ -65,6 +65,7 @@
   .why {
     flex-direction: column-reverse;
     text-align: center;
+    border-top: 1px solid var(--h-ul);
     .video {
       margin-top: 20px;
       .video_bg {
@@ -72,6 +73,7 @@
         display: none;
       }
       .video_wrapper {
+        margin-top: 10px;
         .youtube {
           width: 90vw;
           height: 45vw;
@@ -80,6 +82,7 @@
     }
     .content {
       .why_card_container {
+        margin: 10px 0;
         .img_card {
           gap: 20px;
           .image {
