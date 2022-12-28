@@ -2,6 +2,11 @@ import { Stack } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import Styles from "./footer.module.scss";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function Footer() {
   return (
@@ -85,27 +90,32 @@ function Footer() {
         <nav>
           <ul>
             <Link href="#" passHref>
-              <Stack direction={"row"} spacing={2}>
+              <Stack direction={"row"} spacing={1}>
+                <InstagramIcon />
                 <p>Instagram</p>
               </Stack>
             </Link>
             <Link href="#" passHref>
-              <Stack direction={"row"} spacing={2}>
+              <Stack direction={"row"} spacing={1}>
+                <FacebookIcon />
                 <p>Facebook</p>
               </Stack>
             </Link>
             <Link href="#" passHref>
-              <Stack direction={"row"} spacing={2}>
+              <Stack direction={"row"} spacing={1}>
+                <LinkedInIcon />
                 <p>LinkedIn</p>
               </Stack>
             </Link>
             <Link href="#" passHref>
-              <Stack direction={"row"} spacing={2}>
+              <Stack direction={"row"} spacing={1}>
+                <TwitterIcon />
                 <p>Twitter</p>
               </Stack>
             </Link>
             <Link href="#" passHref>
-              <Stack direction={"row"} spacing={2}>
+              <Stack direction={"row"} spacing={1}>
+                <YouTubeIcon />
                 <p>Youtube</p>
               </Stack>
             </Link>

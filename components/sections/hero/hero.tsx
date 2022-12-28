@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Styles from "./hero.module.scss";
 import portfolio from "../../../assets/images/hero/portfolio.png";
@@ -6,23 +6,26 @@ import growth from "../../../assets/images/hero/growth.png";
 import boi from "../../../assets/images/hero/boi.png";
 import girl from "../../../assets/images/hero/girl.png";
 import { Button, Stack } from "@mui/material";
+import am from "../../../assets/images/testimonials/NikhilS.jpg";
+import ap from "../../../assets/images/testimonials/SiddarthS.jpg";
+import ks from "../../../assets/images/testimonials/KanikaS.jpg";
 
 interface IStudentCard {
-  src: string;
+  src: StaticImageData;
   name: string;
 }
 
 const students: IStudentCard[] = [
   {
-    src: "",
+    src: am,
     name: "Akshat Mehta",
   },
   {
-    src: "",
+    src: ap,
     name: "Anish Patel",
   },
   {
-    src: "",
+    src: ks,
     name: "Kanika Sharma",
   },
 ];

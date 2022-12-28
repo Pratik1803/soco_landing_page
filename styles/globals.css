@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 :root{
   --fc-pri: #2B2B2B;  /* Font color for headings */
@@ -11,7 +12,8 @@
   --fc-yellow: #FFCA12;
   --fs-pri:3vw;  /* Font size for headings */
   --fs-sec: 1.25vw; /* Font size for  content*/
-  --fs-ter: 1.5vw;  
+  --fs-ter: 1.5vw;  /* For the price card names*/
+  --fs-quotes: 8vw; /* For quotes before testimonials*/
 
   /* Paddings and margins */
   --padding-x: 5vw; /* universal X-Axis padding  */
@@ -29,24 +31,29 @@
   --soco-blue: #0063ff; /* Signature color of soco */   
   --soco-db: #050020; /* Dark blue color for footer*/
   --teal:#00BFFF;
-  --light-blue:#9be6ff;
-  --light-red: #FFB2D7;
-  --light-green: #96ED9C;
-  --light-orange: #FFC7BF;
+  --light-blue:#b3ecff;
+  --light-red: #ffcde5;
+  --light-green: #c4ffc8;
+  --light-orange: #ffe7e3;
   --light-yellow: #FFF0BB;
-  --light-violet: #C2BEFF;
+  --light-violet: #d7d4ff;
 
   /* Gradients */
   --gradient-violet:  linear-gradient(180deg, #C6C6FF 0%, #9F9FFF 100%);
   --gradient-green: linear-gradient(180deg, #E0F8E1 0%, #B9FFBC 100%);
   --gradient-blue:  linear-gradient(180deg, #BCD6FF 0%, #ACCCFF 100%);
+  --gradient-yellow: linear-gradient(180deg, #FFF6D7 0%, #FFF0BB 100%);;
+
+  /* fonts */
+  --f-normal:'Roboto', sans-serif;
+  --f-quotes: 'Secular One', sans-serif;;
 }
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--f-normal);
 }
 
 h1,h2,h3,h4,h5,h6{

@@ -2,19 +2,26 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Styles from "./oneForAll.module.scss";
 import p1 from "../../../../assets/images/about/floaters/portraits/p1.png";
+import p2 from "../../../../assets/images/about/floaters/portraits/p2.png";
+import p3 from "../../../../assets/images/about/floaters/portraits/p3.png";
+import p4 from "../../../../assets/images/about/floaters/portraits/p4.png";
+import p5 from "../../../../assets/images/about/floaters/portraits/p5.png";
+import p6 from "../../../../assets/images/about/floaters/portraits/p6.png";
+import p7 from "../../../../assets/images/about/floaters/portraits/p7.png";
+import p8 from "../../../../assets/images/about/floaters/portraits/p8.png";
 
 function OneForAll() {
-  const imgsArr = [p1, p1, p1, p1, p1, p1, p1, p1];
+  const imgsArr = [p1, p2, p3, p4, p5, p6, p7, p8];
   const titleArr = [
-    "Student",
-    "Student",
-    "Student",
-    "Student",
-    "Student",
-    "Student",
-    "Student",
-    "Student",
     "Students",
+    "Recruiters",
+    "Artists",
+    "Analysts",
+    "Marketing",
+    "Content Writers",
+    "Graphic Designers",
+    "Researcher",
+    "Editors",
   ];
 
   interface IPortraitProps {
