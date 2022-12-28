@@ -41,7 +41,7 @@ function Footer() {
               <p>FAQ</p>
             </Link>
             <Link href="#" passHref>
-              <p>Founder's Story</p>
+              <p>Founder&apos;s Story</p>
             </Link>
           </ul>
         </nav>
