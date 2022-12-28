@@ -5,6 +5,8 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
+  flex-flow: row;
+  flex-wrap: wrap;
   h3,
   h2 {
     color: #fff;
@@ -31,6 +33,18 @@
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    gap: 5vh;
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+      width: 90%;
     }
   }
 }

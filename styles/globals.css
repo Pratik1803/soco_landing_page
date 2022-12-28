@@ -46,7 +46,12 @@
 
   /* fonts */
   --f-normal:'Roboto', sans-serif;
-  --f-quotes: 'Secular One', sans-serif;;
+  --f-quotes: 'Secular One', sans-serif;
+
+  /* Responsiveness */
+  --width-desktop:1100px;
+  --width-mob: 700px;
+
 }
 
 *{
@@ -54,6 +59,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--f-normal);
+  /* border: 1px solid red; */
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -72,7 +78,9 @@ p,li{
 @media only screen and (max-width:1100px){
   :root{
     --fs-pri:32px;  /* Font size for headings */
-  --fs-sec: 18px; /* Font size for  content*/
-  --fs-ter: 26px; 
+    --fs-sec: 18px; /* Font size for  content*/
+    --fs-ter: 26px; 
+
+    --padding-sec-y: 7.5vh;
   }
 }

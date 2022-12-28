@@ -20,7 +20,7 @@ function OneForAll() {
     "Marketing",
     "Content Writers",
     "Graphic Designers",
-    "Researcher",
+    "Lawyers",
     "Editors",
   ];
 

@@ -35,3 +35,35 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .about {
+    position: relative;
+    .header {
+      flex-direction: column;
+      .about_head {
+        .h1_wrapper {
+          &::after {
+            right: auto;
+            left: 00%;
+            top: auto;
+            bottom: 00%;
+          }
+        }
+        .image {
+          position: absolute;
+          top: 10vh;
+          right: 0px;
+          img {
+            width: 50vw;
+            height: auto;
+          }
+        }
+      }
+      .content {
+        margin-top: 2.5vh;
+        width: 100%;
+      }
+    }
+  }
+}

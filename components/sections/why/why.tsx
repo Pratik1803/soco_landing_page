@@ -63,7 +63,7 @@ function Why() {
         <div className={Styles.video_bg}></div>
         <div className={Styles.video_wrapper}>
           <YouTube
-            style={{ borderRadius: "20px", height: "50vh" }}
+            className={Styles.youtube}
             videoId="VLC7GYM-dGM"
             opts={opts}
             onReady={onReady}

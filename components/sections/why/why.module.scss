@@ -31,9 +31,10 @@
     .video_wrapper {
       width: 100%;
       height: 100%;
-      //   overflow: hidden;
-
-      //   border-radius: 20px;
+      .youtube {
+        border-radius: 10px;
+        height: 50vh;
+      }
     }
   }
   .content {
@@ -54,6 +55,44 @@
         }
         .card_content {
           font-size: var(--fs-ter);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .why {
+    flex-direction: column-reverse;
+    text-align: center;
+    .video {
+      margin-top: 20px;
+      .video_bg {
+        width: 100%;
+        display: none;
+      }
+      .video_wrapper {
+        .youtube {
+          width: 90vw;
+          height: 45vw;
+        }
+      }
+    }
+    .content {
+      .why_card_container {
+        .img_card {
+          gap: 20px;
+          .image {
+            img {
+              width: 15vw;
+            }
+          }
+          .card_content {
+            text-align: left;
+            h3 {
+              font-size: 20px;
+            }
+          }
         }
       }
     }

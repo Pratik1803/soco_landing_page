@@ -17,3 +17,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .integrations {
+    width: 100vw;
+    text-align: center;
+    padding: var(--padding-sec-y) var(--padding-x);
+    .image {
+      img {
+        height: auto;
+        width: 70vw;
+      }
+    }
+  }
+}

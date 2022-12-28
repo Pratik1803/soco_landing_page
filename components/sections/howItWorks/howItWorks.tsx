@@ -42,6 +42,12 @@ function HowItWorks() {
           getting hired by 80%.
         </p>
         <br />
+        <div className={Styles.video_mob}>
+          <video autoPlay loop>
+            <source src="/assets/videos/owItWorks/hiw.mp4" />
+          </video>
+        </div>
+        <br />
         {steps.map((ele, index) => (
           <StepsCard key={index} index={index} step={ele} />
         ))}

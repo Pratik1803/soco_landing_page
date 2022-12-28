@@ -39,3 +39,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .get_started {
+    text-align: center;
+    .wrapper {
+      width: 90vw;
+      overflow-x: hidden;
+      .nav {
+        width: 90vw;
+        overflow-x: scroll;
+        .nav_item {
+          p {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,3 +35,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .colleges {
+    .image {
+      img {
+        width: 80%;
+      }
+    }
+    h1 {
+      width: 100%;
+    }
+    .img_wrapper {
+      gap: 20px;
+      img {
+        width: 40vw;
+      }
+    }
+  }
+}

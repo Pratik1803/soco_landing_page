@@ -117,7 +117,7 @@ function Testimonials() {
           <h2>{data.name}</h2>
           <p>{data.college}</p>
           <br />
-          <p>{data.desc}</p>
+          <p>"{data.desc}"</p>
         </div>
       </div>
     );

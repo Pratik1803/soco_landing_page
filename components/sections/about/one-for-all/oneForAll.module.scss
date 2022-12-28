@@ -76,6 +76,17 @@
     p {
       color: #fff;
     }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: inherit;
+      filter: blur(10px);
+      z-index: -1;
+    }
   }
 
   .stud_card1 {
@@ -86,17 +97,6 @@
     p {
       color: var(--fc-red);
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
-    }
   }
   .stud_card2 {
     left: 5%;
@@ -105,17 +105,6 @@
     background-color: var(--light-green);
     p {
       color: var(--fc-green);
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
     }
   }
   .stud_card3 {
@@ -126,17 +115,6 @@
     p {
       color: var(--fc-blue);
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
-    }
   }
   .stud_card4 {
     left: 5%;
@@ -145,17 +123,6 @@
     background-color: var(--light-orange);
     p {
       color: var(--fc-orange);
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
     }
   }
   .stud_card5 {
@@ -166,17 +133,6 @@
     p {
       color: var(--fc-yellow);
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
-    }
   }
   .stud_card6 {
     right: 5%;
@@ -185,17 +141,6 @@
     background-color: var(--light-violet);
     p {
       color: var(--fc-violet);
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
     }
   }
   .stud_card7 {
@@ -206,17 +151,6 @@
     p {
       color: var(--fc-orange);
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
-    }
   }
   .stud_card8 {
     right: 5%;
@@ -226,17 +160,6 @@
     p {
       color: var(--fc-green);
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
-    }
   }
   .stud_card9 {
     left: 45%;
@@ -245,17 +168,6 @@
     background-color: var(--light-yellow);
     p {
       color: var(--fc-yellow);
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: inherit;
-      filter: blur(10px);
-      z-index: -1;
     }
   }
 
@@ -329,5 +241,69 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .one_for_all {
+    min-height: 100vh;
+    .por {
+      img {
+        width: 15vw;
+        height: auto;
+      }
+    }
+    .por8,
+    .por1,
+    .por7,
+    .por2 {
+      display: none;
+    }
+
+    .por3 {
+      top: 20%;
+      left: 5%;
+    }
+    .por6 {
+      bottom: 20px;
+      right: auto;
+      left: 10%;
+    }
+    .por4 {
+      left: auto;
+      right: 5%;
+    }
+    .stud_card5,
+    .stud_card1,
+    .stud_card2,
+    .stud_card4,
+    .stud_card9 {
+      display: none;
+    }
+    .stud_card6 {
+      right: auto;
+      left: 0%;
+      top: 10%;
+    }
+    .stud_card7 {
+      right: 0%;
+      top: 25%;
+    }
+    .stud_card3 {
+      left: 0;
+      top: 65%;
+    }
+    .center {
+      width: 35vw;
+      height: 35vw;
+    }
+    .bg2 {
+      width: 60vw;
+      height: 60vw;
+    }
+    .bg1 {
+      height: 85vw;
+      width: 85vw;
+    }
   }
 }

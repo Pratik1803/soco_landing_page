@@ -71,3 +71,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .pricing {
+    text-align: center;
+    .wrapper {
+      gap: 30px;
+      .price_card {
+        text-align: left;
+        width: 100%;
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+    .waves {
+      width: 100vw;
+      overflow-x: hidden;
+      img {
+        width: auto;
+        height: 60vh;
+      }
+    }
+  }
+}

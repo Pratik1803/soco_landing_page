@@ -6,7 +6,7 @@ import Select from "./steps/select";
 import Upload from "./steps/upload";
 
 function HowToGetStarted() {
-  const [active, setActive] = useState("sec2");
+  const [active, setActive] = useState("sec1");
 
   interface ISwitch {
     currentTab: string;
