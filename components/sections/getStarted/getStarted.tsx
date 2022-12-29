@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./getStarted.module.scss";
 import CreateAnAccount from "./steps/createAnAccount";
 import Publish from "./steps/publish";
@@ -39,6 +39,18 @@ function HowToGetStarted() {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 850) {
+        setActive("");
+      } else {
+        setActive("sec1");
+      }
+    });
+
+    return window.removeEventListener("resize", () => {});
+  }, []);
+
   return (
     <section className={Styles.get_started} data-aos="fade-up">
       <h1>How to get started?</h1>
@@ -53,11 +65,13 @@ function HowToGetStarted() {
             className={`${Styles.nav_item} ${
               active == "sec1" ? Styles.active : ""
             }`}
-            onClick={() => {
-              toggleActive("sec1");
-            }}
           >
-            <div className={Styles.nav_item_head}>
+            <div
+              className={Styles.nav_item_head}
+              onClick={() => {
+                toggleActive("sec1");
+              }}
+            >
               <p>Create an Account</p>
               <AddIcon />
             </div>
@@ -69,11 +83,13 @@ function HowToGetStarted() {
             className={`${Styles.nav_item} ${
               active == "sec2" ? Styles.active : ""
             }`}
-            onClick={() => {
-              toggleActive("sec2");
-            }}
           >
-            <div className={Styles.nav_item_head}>
+            <div
+              className={Styles.nav_item_head}
+              onClick={() => {
+                toggleActive("sec2");
+              }}
+            >
               <p>Upload</p>
               <AddIcon />
             </div>
@@ -85,11 +101,13 @@ function HowToGetStarted() {
             className={`${Styles.nav_item} ${
               active == "sec3" ? Styles.active : ""
             }`}
-            onClick={() => {
-              toggleActive("sec3");
-            }}
           >
-            <div className={Styles.nav_item_head}>
+            <div
+              className={Styles.nav_item_head}
+              onClick={() => {
+                toggleActive("sec3");
+              }}
+            >
               <p>Select a custom theme</p>
               <AddIcon />
             </div>
@@ -101,11 +119,13 @@ function HowToGetStarted() {
             className={`${Styles.nav_item} ${
               active == "sec4" ? Styles.active : ""
             }`}
-            onClick={() => {
-              toggleActive("sec4");
-            }}
           >
-            <div className={Styles.nav_item_head}>
+            <div
+              className={Styles.nav_item_head}
+              onClick={() => {
+                toggleActive("sec4");
+              }}
+            >
               <p>Publish and share</p>
               <AddIcon />
             </div>

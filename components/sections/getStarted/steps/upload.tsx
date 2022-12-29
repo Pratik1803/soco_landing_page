@@ -10,10 +10,18 @@ function Upload() {
   const [active1, setActive1] = useState(true);
   let interval: string | number | NodeJS.Timer | undefined;
 
+  function toggleActive1(value: boolean) {
+    clearInterval(interval);
+    setActive1(value);
+    // interval = setInterval(() => {
+    //   setActive1((prev) => !prev);
+    // }, 5000);
+  }
+
   useEffect(() => {
     interval = setInterval(() => {
       setActive1((prev) => !prev);
-    }, 3000);
+    }, 5000);
     return () => {
       clearInterval(interval);
     };
@@ -31,7 +39,7 @@ function Upload() {
         <p>
           {active1
             ? "Upload your work from following categories and show your talent to world."
-            : "Publish your work in a variety of formats to your Portfolio. Build your proof of work to increase your chances of getting hired."}
+            : "Publish your work in a variety of formats to your Portfolio. Build your proof of work to increase your chances of getting"}
         </p>
 
         {active1 ? (
@@ -67,9 +75,15 @@ function Upload() {
         <Stack direction={"row"} spacing={2} className={Styles.dot_wrapper}>
           <div
             className={`${Styles.dot1} ${active1 ? Styles.active : ""}`}
+            onClick={() => {
+              toggleActive1(true);
+            }}
           ></div>
           <div
             className={`${Styles.dot2} ${!active1 ? Styles.active : ""}`}
+            onClick={() => {
+              toggleActive1(false);
+            }}
           ></div>
         </Stack>
       </div>
