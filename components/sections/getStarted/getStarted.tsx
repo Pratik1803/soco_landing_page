@@ -40,16 +40,21 @@ function HowToGetStarted() {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      if (window.innerWidth <= 850) {
-        setActive("");
-      } else {
-        setActive("sec1");
-      }
-    });
+    if (window.innerWidth <= 850) {
+      setActive("");
+    } else {
+      setActive("sec1");
+    }
+    // window.addEventListener("resize", () => {
+    //   if (window.innerWidth <= 850) {
+    //     setActive("");
+    //   } else {
+    //     setActive("sec1");
+    //   }
+    // });
 
-    return window.removeEventListener("resize", () => {});
-  }, []);
+    // return window.removeEventListener("resize", () => {});
+  }, [window.innerWidth]);
 
   return (
     <section className={Styles.get_started} data-aos="fade-up">
