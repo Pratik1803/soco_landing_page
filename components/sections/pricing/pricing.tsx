@@ -20,17 +20,6 @@ function Pricing() {
       ],
     },
     {
-      name: "6 Months",
-      price: "₹1999.00",
-      pros: [
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-      ],
-    },
-    {
       name: "1 Month",
       price: "₹599.00",
       pros: [
@@ -44,6 +33,17 @@ function Pricing() {
     {
       name: "3 Months",
       price: "₹1199.00",
+      pros: [
+        "Reference site about Lorem Ipsum, giving information.",
+        "Reference site about Lorem Ipsum, giving information.",
+        "Reference site about Lorem Ipsum, giving information.",
+        "Reference site about Lorem Ipsum, giving information.",
+        "Reference site about Lorem Ipsum, giving information.",
+      ],
+    },
+    {
+      name: "6 Months",
+      price: "₹1999.00",
       pros: [
         "Reference site about Lorem Ipsum, giving information.",
         "Reference site about Lorem Ipsum, giving information.",

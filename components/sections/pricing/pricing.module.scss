@@ -91,6 +91,10 @@
         padding: 20px;
         h2 {
           font-size: 28px;
+          z-index: 2;
+        }
+        strong {
+          z-index: 2;
         }
         ul {
           width: calc(100% - 20px);

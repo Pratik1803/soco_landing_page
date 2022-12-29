@@ -132,9 +132,6 @@
         // transform: none;
         text-align: left;
         width: calc(100% - 25px);
-        li {
-          // list-style: none;
-        }
       }
     }
     .image {
@@ -159,11 +156,9 @@
     }
     .image_publish {
       img {
-        width: 100%;
+        width: 90%;
+        transform: translateX(-2.5vw);
       }
     }
-  }
-  .upload {
-    // height: 110vh;
   }
 }

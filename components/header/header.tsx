@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Styles from "./header.module.scss";
 import "aos/dist/aos.css";
+import Image from "next/image";
+import logo from "../../assets/images/logo.png";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -12,10 +14,11 @@ function Header() {
   }
 
   return (
-    <header className={Styles.header} data-aos="fade-up">
+    <header className={Styles.header}>
       <nav>
         <Link href={"#"} passHref className={Styles.logo}>
-          <h3>thesocialcomment</h3>
+          {/* <h3>thesocialcomment</h3> */}
+          <Image src={logo} width={211} height={25} alt={""} />
         </Link>
         <div
           className={`${Styles.hamburger} ${open ? Styles.open : ""}`}

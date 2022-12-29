@@ -31,7 +31,6 @@ function Colleges() {
       <br />
       <div
         className={!clamped ? Styles.img_wrapper_clamped : Styles.img_wrapper}
-        data-aos="fade-up"
       >
         {imgArr.map((img, index) => {
           return (
