@@ -16,6 +16,8 @@ import sameehaF from "../../../assets/images/testimonials/SameehaF.jpg";
 import siddharthS from "../../../assets/images/testimonials/SiddarthS.jpg";
 import varunC from "../../../assets/images/testimonials/VarunC.jpg";
 import yashikaM from "../../../assets/images/testimonials/YashikaM.jpg";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function Testimonials() {
   let sliderInterval: string | number | NodeJS.Timer | undefined;
@@ -103,21 +105,39 @@ function Testimonials() {
   }
 
   const TCard = ({ data, index }: Props) => {
+    const [openDetails, setOpenDetails] = useState(false);
+    function toggleDetails() {
+      setOpenDetails((prev) => !prev);
+    }
+
     return (
       <div
-        className={Styles.t_card}
+        className={openDetails ? Styles.t_card_expanded : Styles.t_card}
         style={{
           backgroundColor: `var(--light-${colors[index % colors.length]})`,
         }}
       >
         <div className={Styles.image}>
           <Image src={data.img} width={80} height={80} alt={""} />
+          <div className={Styles.stud_detail}>
+            <h3>{data.name}</h3>
+            <p>{data.college}</p>
+          </div>
         </div>
+        <br />
         <div className={Styles.card_content}>
-          <h2>{data.name}</h2>
-          <p>{data.college}</p>
-          <br />
-          <p>&quot;{data.desc}&quot;</p>
+          <span>
+            <p className={!openDetails ? Styles.clamped : ""}>
+              &quot;{data.desc}&quot;
+            </p>
+            {data.desc.length > 107 ? (
+              <h4 onClick={toggleDetails}>
+                Read {openDetails ? "less" : "more"}
+              </h4>
+            ) : (
+              ""
+            )}
+          </span>
         </div>
       </div>
     );
@@ -168,27 +188,20 @@ function Testimonials() {
         </span>
         <p>What our users say about us? </p>
         <br />
-        {/* <div className={Styles.wrapper}>
-        <Button>B</Button>
-        <div className={Styles.slider}>
-          <div className={Styles.card_wrapper}>
-            {testimonials.map((t, ind) => {
-              return (
-                <TCard
-                  key={ind}
-                  name={t.name}
-                  college={t.college}
-                  desc={t.desc}
-                  img={t.img}
-                />
-              );
-            })}
-          </div>
-        </div>
-        <Button>A</Button>
-      </div> */}
         <div className={Styles.swiper}>
-          <Slider {...settings}>
+          <Slider
+            prevArrow={
+              <Button>
+                <ArrowBackIosIcon />
+              </Button>
+            }
+            nextArrow={
+              <Button>
+                <ArrowForwardIosIcon />
+              </Button>
+            }
+            {...settings}
+          >
             {testimonials.map((t, ind) => {
               return <TCard key={ind} data={t} index={ind + 1} />;
             })}

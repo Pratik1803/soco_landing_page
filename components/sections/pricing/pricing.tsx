@@ -1,11 +1,12 @@
-import { Stack } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import BlueButton from "../../../widgets/blueButton/BlueButton";
 import Styles from "./pricing.module.scss";
 import waves from "../../../assets/images/waves.png";
 
 function Pricing() {
+  const [activePricing, setActivePricing] = useState<number>();
   const pricingData = [
     {
       name: "Free",
@@ -69,12 +70,17 @@ function Pricing() {
     name: string;
     price: string;
     pros: string[];
+    active: number | undefined;
   }
+
+  // ${data.index == 1 ? Styles.blue : ""}
 
   const PriceCard = (data: IPriceCard) => {
     return (
       <div
-        className={`${Styles.price_card} ${data.index == 1 ? Styles.blue : ""}`}
+        className={`${Styles.price_card} ${
+          data.index === data.active ? Styles.active : ""
+        }`}
       >
         <p>Name</p>
         <Stack
@@ -92,7 +98,16 @@ function Pricing() {
         </ul>
         <br />
         <div className={Styles.btn}>
-          <BlueButton link="#" title="Subscribe" inverted={data.index == 1} />
+          <BlueButton link="#" title="Subscribe" />
+        </div>
+        <div className={Styles.more_btn}>
+          <Button
+            onClick={() => {
+              setActivePricing(data.index);
+            }}
+          >
+            See more
+          </Button>
         </div>
       </div>
     );
@@ -101,7 +116,7 @@ function Pricing() {
   return (
     <>
       <section className={Styles.pricing}>
-        <h1>Simple, Effective and Transparent pricing.</h1>
+        <h1>Simple, effective and transparent pricing.</h1>
         <br />
         <p>No contracts, no surprises.</p>
         <br />
@@ -115,6 +130,7 @@ function Pricing() {
                 name={ele.name}
                 price={ele.price}
                 pros={ele.pros}
+                active={activePricing}
               />
             );
           })}

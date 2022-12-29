@@ -9,8 +9,13 @@
   nav {
     display: flex;
     gap: 5vw;
-    h3 {
-      color: var(--soco-blue);
+    .logo {
+      text-decoration: none;
+      h3 {
+        color: var(--soco-blue);
+        font-family: sifonn;
+        transform: translateY(20%);
+      }
     }
     .hamburger {
       display: none;

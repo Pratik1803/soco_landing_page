@@ -10,7 +10,7 @@ function Growth() {
         <Image src={students} height={2000} width={3000} alt="" />
       </div>
       <div className={Styles.content}>
-        <h1>We Help You Grow!</h1>
+        <h1>We help you grow!</h1>
         <br />
         <p>
           We provide you with the best tools to get started and grow as you

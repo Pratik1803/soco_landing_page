@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Styles from "./colleges.module.scss";
 import decoration from "../../../assets/images/colleges/decoration.png";
 import c1 from "../../../assets/images/colleges/c1.png";
@@ -15,15 +15,23 @@ import c10 from "../../../assets/images/colleges/c10.png";
 
 function Colleges() {
   const imgArr = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10];
+  const [clamped, setClamped] = useState(false);
+
+  function toggleClamped() {
+    setClamped((prev) => !prev);
+  }
+
   return (
     <section className={Styles.colleges}>
       <div className={Styles.image}>
         <Image src={decoration} width={650} height={75} alt={""} />
       </div>
       <br />
-      <h1>Trusted by 35000+ Students Over 150+ Colleges </h1>
+      <h1>Trusted by 35000+ students over 150+ colleges </h1>
       <br />
-      <div className={Styles.img_wrapper}>
+      <div
+        className={!clamped ? Styles.img_wrapper_clamped : Styles.img_wrapper}
+      >
         {imgArr.map((img, index) => {
           return (
             <div key={index} className={Styles.img_card}>
@@ -32,6 +40,7 @@ function Colleges() {
           );
         })}
       </div>
+      <h4 onClick={toggleClamped}>View {clamped ? "less" : "more"}</h4>
     </section>
   );
 }

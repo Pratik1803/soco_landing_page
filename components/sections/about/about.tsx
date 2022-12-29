@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Styles from "./about.module.scss";
 import decoration from "../../../assets/images/about/decoration.png";
 import Image from "next/image";
@@ -6,6 +6,12 @@ import OneForAll from "./one-for-all/oneForAll";
 import Integrations from "./integrations/integrations";
 
 function About() {
+  const [clamped, setClamped] = useState(false);
+
+  function toggleClamped() {
+    setClamped((prev) => !prev);
+  }
+
   return (
     <section className={Styles.about}>
       <div className={Styles.header}>
@@ -23,15 +29,17 @@ function About() {
             future.
           </h1>
           <br />
-          <p>
-            Our mission is to help individuals land opportunities with their
-            proof of work.
-            <br />
-            <br />
-            Proof of work is changing the way we build our personal brand,
-            collaborate with others, or land opportunities in our careers and
-            life. We makes it super easy.
-          </p>
+          <span>
+            <p className={clamped ? "" : Styles.clamped}>
+              Our mission is to help individuals land opportunities with their
+              proof of work.
+              <br />
+              Proof of work is changing the way we build our personal brand,
+              collaborate with others, or land opportunities in our careers and
+              life. We makes it super easy.
+            </p>
+            <h4 onClick={toggleClamped}>Read {clamped ? "less" : "more"}</h4>
+          </span>
         </div>
       </div>
       <OneForAll />

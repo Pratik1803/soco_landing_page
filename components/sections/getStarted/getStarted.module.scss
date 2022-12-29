@@ -20,6 +20,14 @@
         padding: 20px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
+        .nav_item_head {
+          svg {
+            display: none;
+          }
+        }
+        .mob_ver {
+          display: none;
+        }
       }
       .active {
         position: relative;
@@ -44,17 +52,61 @@
   .get_started {
     text-align: center;
     border-top: 1px solid var(--h-ul);
+    border-radius: 0px;
     .wrapper {
       width: 90vw;
       overflow-x: hidden;
+      padding: 0;
+      border-radius: 5px;
       .nav {
         width: 90vw;
-        overflow-x: scroll;
+        overflow-x: hidden;
+        flex-direction: column;
+        gap: 0px;
         .nav_item {
-          p {
-            white-space: nowrap;
+          border-bottom: 1px solid var(--h-ul);
+          padding: 20px 0;
+          height: 65px;
+          overflow-y: hidden;
+          transition: 0.3s ease-in-out;
+          .nav_item_head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            height: 25px;
+            p {
+              white-space: nowrap;
+            }
+            svg {
+              display: block;
+              color: var(--soco-blue);
+              transition: 0.3s ease-in-out;
+            }
           }
         }
+        .active {
+          height: fit-content;
+          overflow-y: visible;
+          .nav_item_head {
+            svg {
+              color: red;
+              transform: rotate(45deg);
+            }
+          }
+          .mob_ver {
+            display: block;
+            margin-top: 15px;
+            padding: 10px;
+            border-top: 1px solid var(--h-ul);
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .container {
+        display: none;
       }
     }
   }

@@ -8,7 +8,7 @@ function CreateAnAccount() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <h1>Create or Log into your account</h1>
+        <h1>Create or log into your account.</h1>
         <br />
         <p>
           The first step is to create or log into your account using valid

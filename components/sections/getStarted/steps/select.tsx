@@ -8,13 +8,19 @@ function Select() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <h1>Show your Poof Of Work through Elegant Portfolio Themes.</h1>
+        <h1>15+ Portfolio themes</h1>
         <br />
         <p>
-          Select any Portfolio theme among 15+ Portfolio designs and capture the
-          imagination of Recruiter.
+          Show your proof of work through these elegant portfolio designs and
+          capture the imagination of recruiter.
         </p>
-        <br />
+
+        <ul>
+          <li>Select any portfolio theme</li>
+          <li>Add proof of work to the portfolio </li>
+          <li>And share with potential recruiters & clients</li>
+        </ul>
+
         <BlueButton title="Create Your Profile" link="#" />
       </div>
       <div className={Styles.image_select}>

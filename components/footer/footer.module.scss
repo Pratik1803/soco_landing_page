@@ -7,7 +7,7 @@
   justify-content: space-between;
   flex-flow: row;
   flex-wrap: wrap;
-  h3,
+  strong,
   h2 {
     color: #fff;
   }
@@ -17,7 +17,15 @@
   .sec1,
   .sec2,
   .sec3,
-  .sec4 {
+  .sec4,
+  .sec5 {
+    span {
+      display: flex;
+      justify-content: space-between;
+      svg {
+        display: none;
+      }
+    }
     nav {
       padding-top: 10px;
       ul {
@@ -40,11 +48,36 @@
 @media only screen and (max-width: 850px) {
   .footer {
     gap: 5vh;
-    .sec1,
+
     .sec2,
     .sec3,
     .sec4 {
-      width: 90%;
+      width: 100%;
+      overflow-y: hidden;
+      height: 30px;
+
+      span {
+        border-bottom: 1px solid var(--h-ul);
+        padding-bottom: 5px;
+        svg {
+          display: block;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+    .active {
+      height: fit-content;
+      overflow-y: visible;
+      transition: 0.3s ease-in-out;
+      span {
+        svg {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .sec1,
+    .sec5 {
+      width: 100%;
     }
   }
 }

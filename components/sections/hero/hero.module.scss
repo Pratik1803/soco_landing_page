@@ -10,12 +10,14 @@
   .growth {
     position: absolute;
     top: 5vh;
+    animation: wave 3s ease-in-out infinite;
   }
   .portfolio {
     left: 0;
   }
   .growth {
     right: 0;
+    animation-delay: 0.5s;
   }
   .boi,
   .girl {
@@ -42,6 +44,9 @@
     transform: translate(-50%, -50%);
     width: 70%;
     text-align: center;
+    .video {
+      display: none;
+    }
     p {
       width: 60%;
       margin: 5vh auto;
@@ -102,10 +107,12 @@
 @media only screen and (max-width: 850px) {
   .hero {
     background-image: url("../../../assets/images/hero/hero_mob.png");
-    height: 80vh;
+    height: fit-content;
+    min-height: 85vh;
     width: 100%;
     border-bottom: 1px solid var(--h-ul);
     position: relative;
+    padding-top: 20vh;
     .boi,
     .girl {
       display: none;
@@ -128,13 +135,30 @@
       animation-delay: 0.3s;
     }
     .content {
-      width: 90%;
+      width: 100%;
+      top: 55%;
       z-index: 2;
+      h1 {
+        font-size: var(--fs-ter);
+      }
+      .video {
+        display: block;
+        margin-top: 20px;
+        .video_wrapper {
+          margin-top: 10px;
+          .youtube {
+            width: 90vw;
+            height: 45vw;
+          }
+        }
+      }
       button {
-        padding: 10px 30px;
+        padding: 10px 20px;
       }
       p {
-        width: 90%;
+        width: 100%;
+        margin: 10px 0;
+        display: none;
       }
       .students {
         display: none;

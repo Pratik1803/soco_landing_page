@@ -71,7 +71,7 @@ function Why() {
         </div>
       </div>
       <div className={Styles.content}>
-        <h1>Why thesocialcomment?</h1>
+        <h1>Why us?</h1>
         <br />
         <p>
           SOCO is a fresh new approach to how we attract opportunities for

@@ -13,7 +13,9 @@ function Header() {
   return (
     <header className={Styles.header}>
       <nav>
-        <h3>thesocialcomment</h3>
+        <Link href={"#"} passHref className={Styles.logo}>
+          <h3>thesocialcomment</h3>
+        </Link>
         <div
           className={`${Styles.hamburger} ${open ? Styles.open : ""}`}
           onClick={toggle}

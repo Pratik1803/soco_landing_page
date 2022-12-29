@@ -24,15 +24,29 @@ function Upload() {
       <div className={Styles.content}>
         <h1>
           {active1
-            ? "Upload your work from following categories and show your talent to world."
-            : "Publish your work in a variety of formats to your Portfolio."}
+            ? "Upload all kinds of academic work"
+            : "Publish within seconds"}
         </h1>
         <br />
-        <ul>
-          <li>Be a Blogger and upload Blogs and Articles.</li>
-          <li>Be an Artist and upload your Artwork and Skill Video.</li>
-          <li>Be an Enthusiast and upload your Presentations.</li>
-        </ul>
+        <p>
+          {active1
+            ? "Upload your work from following categories and show your talent to world."
+            : "Publish your work in a variety of formats to your Portfolio. Build your proof of work to increase your chances of getting hired."}
+        </p>
+
+        {active1 ? (
+          <ul>
+            <li>Be a Blogger and upload Blogs and Articles</li>
+            <li>Be an Artist and upload your Artwork and Skill Video</li>
+            <li>Be an Enthusiast and upload your Presentations</li>
+          </ul>
+        ) : (
+          <ul>
+            <li>Drag and drop the content</li>
+            <li>Garnish it with our editor</li>
+            <li>Serve it to the recruiters</li>
+          </ul>
+        )}
         <BlueButton title="Create Your Profile" link="#" />
       </div>
       <div className={Styles.image_upload}>

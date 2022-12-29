@@ -9,11 +9,10 @@
     display: flex;
     justify-content: center;
     position: relative;
-    // width: fit-content;
+    transform: translateX(-2.5vw);
     .quotes {
-      position: absolute;
-      top: -100%;
-      left: 35%;
+      transform: translate(-1vw, -4vw);
+      height: 4vw;
       font-size: var(--fs-quotes);
       font-family: var(--f-quotes);
       color: var(--fc-yellow);
@@ -21,33 +20,58 @@
   }
 
   .swiper {
-    .t_card {
+    width: 100%;
+    .t_card,
+    .t_card_expanded {
       position: relative;
-      width: 400px;
-      height: fit-content;
-      text-align: center;
+      width: 90%;
+      height: 340px;
+      text-align: left;
       border-radius: 20px;
       padding: 10% 5%;
       padding-bottom: 20px;
       margin-bottom: 20px;
+      p {
+        color: var(--fc-pri);
+      }
       .image {
         width: 100%;
         display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        gap: 20px;
         img {
-          border-radius: 50%;
+          width: auto;
+          height: 125px;
+          object-fit: contain;
+          border-radius: 10px;
           box-shadow: var(--box-shdw-1);
+        }
+        .stud_detail {
+          p {
+            font-size: var(--fs-sec);
+          }
         }
       }
       .card_content {
-        height: 300px !important;
-        overflow-y: scroll;
-        p {
-          color: var(--fc-pri);
-        }
-        h2 {
-          margin-bottom: 10px;
+        span {
+          width: 100%;
+          transform: none;
+          display: inline;
+          .clamped {
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow-y: hidden;
+          }
+          h4 {
+            color: var(--soco-blue);
+            margin-top: 2.5px;
+            cursor: pointer;
+            width: fit-content;
+          }
         }
         &::-webkit-scrollbar {
           display: none;
@@ -67,6 +91,15 @@
         z-index: -1;
       }
     }
+    .t_card_expanded {
+      height: fit-content !important;
+      .card_content {
+        height: fit-content;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -74,8 +107,36 @@
   .testimonials {
     width: 100vw;
     .swiper {
-      .t_card {
+      .t_card,
+      .t_card_expanded {
         width: 90vw;
+        height: 360px;
+        margin-bottom: 30px;
+        br {
+          display: none;
+        }
+        .image {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          .stud_detail {
+            h3 {
+              font-size: var(--fs-sec);
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        .card_content {
+          text-align: justify;
+          span {
+            h4 {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }

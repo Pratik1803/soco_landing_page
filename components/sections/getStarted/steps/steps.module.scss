@@ -4,11 +4,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 5vh 0;
+  height: 70vh;
+  // background: red;
+  overflow: hidden;
   .content {
     width: 60%;
     ul {
       margin: 30px 0;
       margin-bottom: 40px;
+      transform: translateX(25px);
       li {
         // list-style: none;
         margin: 10px 0;
@@ -19,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
       object-fit: contain;
       width: 100%;
@@ -70,6 +75,35 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    .circles {
+      position: absolute;
+      width: 20vw;
+      height: 20vw;
+      border-radius: 50%;
+      border: 1px solid var(--h-ul);
+      z-index: -1;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid var(--h-ul);
+      }
+      &::after {
+        width: 27.5vw;
+        height: 27.5vw;
+        border-radius: 50%;
+      }
+      &::before {
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+      }
+    }
     img {
       width: 90%;
       height: auto;
@@ -77,20 +111,21 @@
     }
   }
 }
-.upload {
-  height: 60vh;
-  overflow: hidden;
-}
 
 @media only screen and (max-width: 850px) {
   .createAnAccount,
   .upload {
     flex-direction: column-reverse;
+    height: fit-content;
+    padding: 10px 0;
     .content {
       width: 100%;
       ul {
+        // transform: none;
+        text-align: left;
+        width: calc(100% - 25px);
         li {
-          list-style: none;
+          // list-style: none;
         }
       }
     }

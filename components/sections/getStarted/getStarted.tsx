@@ -4,9 +4,17 @@ import CreateAnAccount from "./steps/createAnAccount";
 import Publish from "./steps/publish";
 import Select from "./steps/select";
 import Upload from "./steps/upload";
+import AddIcon from "@mui/icons-material/Add";
 
 function HowToGetStarted() {
   const [active, setActive] = useState("sec1");
+
+  function toggleActive(newActive: string) {
+    if (active == newActive) {
+      return setActive("");
+    }
+    setActive(newActive);
+  }
 
   interface ISwitch {
     currentTab: string;
@@ -33,7 +41,7 @@ function HowToGetStarted() {
 
   return (
     <section className={Styles.get_started}>
-      <h1>How to get Started?</h1>
+      <h1>How to get started?</h1>
       <br />
       <p>
         Now your projects, works, experiences and even your small contributions
@@ -46,40 +54,64 @@ function HowToGetStarted() {
               active == "sec1" ? Styles.active : ""
             }`}
             onClick={() => {
-              setActive("sec1");
+              toggleActive("sec1");
             }}
           >
-            <p>Create an Account</p>
+            <div className={Styles.nav_item_head}>
+              <p>Create an Account</p>
+              <AddIcon />
+            </div>
+            <div className={Styles.mob_ver}>
+              <CreateAnAccount />
+            </div>
           </div>
           <div
             className={`${Styles.nav_item} ${
               active == "sec2" ? Styles.active : ""
             }`}
             onClick={() => {
-              setActive("sec2");
+              toggleActive("sec2");
             }}
           >
-            <p>Upload</p>
+            <div className={Styles.nav_item_head}>
+              <p>Upload</p>
+              <AddIcon />
+            </div>
+            <div className={Styles.mob_ver}>
+              <Upload />
+            </div>
           </div>
           <div
             className={`${Styles.nav_item} ${
               active == "sec3" ? Styles.active : ""
             }`}
             onClick={() => {
-              setActive("sec3");
+              toggleActive("sec3");
             }}
           >
-            <p>Select a Custom Theme</p>
+            <div className={Styles.nav_item_head}>
+              <p>Select a custom theme</p>
+              <AddIcon />
+            </div>
+            <div className={Styles.mob_ver}>
+              <Select />
+            </div>
           </div>
           <div
             className={`${Styles.nav_item} ${
               active == "sec4" ? Styles.active : ""
             }`}
             onClick={() => {
-              setActive("sec4");
+              toggleActive("sec4");
             }}
           >
-            <p>Publish and Share</p>
+            <div className={Styles.nav_item_head}>
+              <p>Publish and share</p>
+              <AddIcon />
+            </div>
+            <div className={Styles.mob_ver}>
+              <Publish />
+            </div>
           </div>
         </div>
         <div className={Styles.container}>

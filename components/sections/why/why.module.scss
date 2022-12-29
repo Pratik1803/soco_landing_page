@@ -44,11 +44,12 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 10px;
+        gap: 15px;
         margin-bottom: 20px;
         .image {
+          width: 12.5%;
           img {
-            width: 80%;
+            width: 100%;
             height: auto;
             object-fit: contain;
           }
@@ -68,6 +69,7 @@
     border-top: 1px solid var(--h-ul);
     .video {
       margin-top: 20px;
+      display: none;
       .video_bg {
         width: 100%;
         display: none;
@@ -86,6 +88,7 @@
         .img_card {
           gap: 20px;
           .image {
+            width: 15%;
             img {
               width: 15vw;
             }
@@ -93,7 +96,10 @@
           .card_content {
             text-align: left;
             h3 {
-              font-size: 20px;
+              font-size: 18px;
+            }
+            p {
+              font-size: 14px;
             }
           }
         }

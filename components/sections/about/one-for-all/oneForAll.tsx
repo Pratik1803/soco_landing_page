@@ -13,13 +13,13 @@ import p8 from "../../../../assets/images/about/floaters/portraits/p8.png";
 function OneForAll() {
   const imgsArr = [p1, p2, p3, p4, p5, p6, p7, p8];
   const titleArr = [
+    "Graphic Designers",
     "Students",
-    "Recruiters",
     "Artists",
     "Analysts",
     "Marketing",
     "Content Writers",
-    "Graphic Designers",
+    "Journalists",
     "Lawyers",
     "Editors",
   ];

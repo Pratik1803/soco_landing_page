@@ -48,15 +48,15 @@ function Objective() {
       <div className={Styles.content}>
         <h4>Objective</h4>
         <h1>
-          Multiple Problems,
-          <br /> Single Solution.
+          Multiple problems,
+          <br /> single solution.
         </h1>
         <br />
         <p>
           thesocialcomment is all about providing convenience to your greatness.
+          <br />
+          Seek, Learn & Create to become industry-ready.
         </p>
-        <br />
-        <p>Seek, Learn & Create to become industry-ready.</p>
         <div className={Styles.btn}>
           <BlueButton title="Get Started" link={"#"} />
         </div>

@@ -35,11 +35,11 @@ function HowItWorks() {
         </video>
       </div>
       <div className={Styles.content}>
-        <h1>How It All Works?</h1>
+        <h1>How it all works?</h1>
         <br />
         <p>
-          This is exactly how you will be able to increase your chances of
-          getting hired by 80%.
+          This is exactly how you may increase your chances of getting hired by
+          80%.
         </p>
         <br />
         <div className={Styles.video_mob}>

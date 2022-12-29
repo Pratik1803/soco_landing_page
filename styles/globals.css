@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@font-face {
+  font-family: sifonn;
+  src: url(../assets/SIFONN_BASIC.otf);
+}
 
 :root{
   --fc-pri: #2B2B2B;  /* Font color for headings */
@@ -10,9 +15,9 @@
   --fc-green: #568A73;
   --fc-blue: #109DB2;
   --fc-yellow: #FFCA12;
-  --fs-pri:3vw;  /* Font size for headings */
-  --fs-sec: 1.25vw; /* Font size for  content*/
-  --fs-ter: 1.5vw;  /* For the price card names*/
+  --fs-pri:2.5vw;  /* Font size for headings */
+  --fs-sec: 1.15vw; /* Font size for  content*/
+  --fs-ter: 1.25vw;  /* For the price card names*/
   --fs-quotes: 8vw; /* For quotes before testimonials*/
 
   /* Paddings and margins */
@@ -45,7 +50,7 @@
   --gradient-yellow: linear-gradient(180deg, #FFF6D7 0%, #FFF0BB 100%);;
 
   /* fonts */
-  --f-normal:'Roboto', sans-serif;
+  --f-normal:'Poppins', sans-serif;;
   --f-quotes: 'Secular One', sans-serif;
 
   /* Responsiveness */
@@ -70,16 +75,16 @@ h1{
   font-size: var(--fs-pri);
 }
 
-p,li{
+p,li, strong{
   color: var(--fc-sec);
   font-size: var(--fs-sec);
 }
 
 @media only screen and (max-width:1100px){
   :root{
-    --fs-pri:32px;  /* Font size for headings */
-    --fs-sec: 18px; /* Font size for  content*/
-    --fs-ter: 26px; 
+    --fs-pri:26px;  /* Font size for headings */
+    --fs-sec: 16px; /* Font size for  content*/
+    --fs-ter: 24px; 
 
     --padding-sec-y: 7.5vh;
   }

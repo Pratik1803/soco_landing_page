@@ -8,21 +8,27 @@ function Publish() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <h1>Share your Work With Recruiters and Companies.</h1>
+        <h1>Share your magic.</h1>
         <br />
         <p>
-          Publish your portfolio on your favourite platform with just a single
-          link and increase your chances of getting hired.
+          Share your work with eecruiters and companies and create your brand
+          image in their mind
         </p>
-        <br />
-        <p>
+
+        <ul>
+          <li>Show your work as a brand</li>
+          <li>Make your work more recognizable</li>
+          <li>Ease of realtime updates</li>
+        </ul>
+        {/* <p>
           Also, you can download your portfolio as Resume in Three different
           themes.
-        </p>
-        <br />
+        </p> */}
+
         <BlueButton title="Create Your Profile" link="#" />
       </div>
       <div className={Styles.image_publish}>
+        <div className={Styles.circles}></div>
         <Image src={s4} width={730} height={520} alt={""} />
       </div>
     </section>

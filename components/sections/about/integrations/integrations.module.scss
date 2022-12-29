@@ -9,12 +9,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   transform: translateX(-5vw);
+  p {
+    color: var(--fc-pri);
+  }
   .image {
     margin-top: 20px;
+    animation: breathe 3s ease-in-out infinite;
     img {
       height: 300px;
       object-fit: contain;
     }
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

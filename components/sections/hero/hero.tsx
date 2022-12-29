@@ -9,6 +9,7 @@ import { Button, Stack } from "@mui/material";
 import am from "../../../assets/images/testimonials/NikhilS.jpg";
 import ap from "../../../assets/images/testimonials/SiddarthS.jpg";
 import ks from "../../../assets/images/testimonials/KanikaS.jpg";
+import YouTube from "react-youtube";
 
 interface IStudentCard {
   src: StaticImageData;
@@ -31,6 +32,18 @@ const students: IStudentCard[] = [
 ];
 
 function Hero() {
+  const opts = {
+    height: "100%",
+    width: "90%",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
+  function onReady(event: { target: { pauseVideo: () => void } }) {
+    event.target.pauseVideo();
+  }
+
   const StudentCard = ({ src, name }: IStudentCard) => {
     return (
       <div className={Styles.student_card}>
@@ -58,13 +71,23 @@ function Hero() {
       </div>
       <div className={Styles.content}>
         <h1>
-          Increase your chances of getting hired by 80% through Proof Of Work.
+          Increase your chances of getting hired by 80% through proof of work
         </h1>
-
         <p>
           Showcase your skills and work using our virtual portfolios to increase
           your chances of getting hired..
         </p>
+        <div className={Styles.video}>
+          <div className={Styles.video_wrapper}>
+            <YouTube
+              className={Styles.youtube}
+              videoId="VLC7GYM-dGM"
+              opts={opts}
+              onReady={onReady}
+            />
+          </div>
+        </div>
+        <br />
 
         <Stack
           direction={"row"}
