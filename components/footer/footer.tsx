@@ -49,7 +49,7 @@ function Footer() {
               <p>How it works</p>
             </Link>
             <Link href="#" passHref>
-              <p>FAQ's</p>
+              <p>FAQ&apos;s</p>
             </Link>
             <Link href="#" passHref>
               <p>Careers</p>
