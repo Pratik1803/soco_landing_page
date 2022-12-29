@@ -30,18 +30,18 @@
   .boi {
     left: -5%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) !important;
   }
   .girl {
     right: 0px;
     top: 50%;
-    transform: translateY(-55%);
+    transform: translateY(-55%) !important;
   }
   .content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     width: 70%;
     text-align: center;
     .video {

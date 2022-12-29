@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Integrations() {
   return (
-    <section className={Styles.integrations}>
+    <section className={Styles.integrations} data-aos="fade-up">
       <h1>Integrations</h1>
       <br />
       <p>

@@ -181,7 +181,7 @@ function Testimonials() {
   };
   return (
     <>
-      <section className={Styles.testimonials}>
+      <section className={Styles.testimonials} data-aos="fade-up">
         <span>
           <h1 className={Styles.quotes}>“</h1>
           <h1>Testimonials</h1>

@@ -56,20 +56,20 @@ function Hero() {
   };
 
   return (
-    <div className={Styles.hero}>
-      <div className={Styles.portfolio}>
+    <div className={Styles.hero} data-aos="fade-up">
+      <div className={Styles.portfolio} data-aos="fade-up">
         <Image src={portfolio} alt="" width={150} height={150} />
       </div>
-      <div className={Styles.growth}>
+      <div className={Styles.growth} data-aos="fade-up">
         <Image src={growth} alt="" width={150} height={150} />
       </div>
-      <div className={Styles.boi}>
+      <div className={Styles.boi} data-aos="fade-up">
         <Image src={boi} alt="" width={350} height={350} />
       </div>
-      <div className={Styles.girl}>
+      <div className={Styles.girl} data-aos="fade-up">
         <Image src={girl} alt="" width={280} height={350} />
       </div>
-      <div className={Styles.content}>
+      <div className={Styles.content} data-aos="fade-up">
         <h1>
           Increase your chances of getting hired by 80% through proof of work
         </h1>

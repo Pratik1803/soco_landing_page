@@ -13,8 +13,8 @@ function About() {
   }
 
   return (
-    <section className={Styles.about}>
-      <div className={Styles.header}>
+    <section className={Styles.about} data-aos="fade-up">
+      <div className={Styles.header} data-aos="fade-up">
         <div className={Styles.about_head}>
           <div className={Styles.h1_wrapper}>
             <h1>About</h1>
@@ -23,7 +23,7 @@ function About() {
             <Image src={decoration} height={161} width={270} alt={""} />
           </div>
         </div>
-        <div className={Styles.content}>
+        <div className={Styles.content} data-aos="fade-up">
           <h1>
             We are a small and young team from India passionate about the
             future.

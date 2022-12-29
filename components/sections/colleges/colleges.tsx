@@ -22,7 +22,7 @@ function Colleges() {
   }
 
   return (
-    <section className={Styles.colleges}>
+    <section className={Styles.colleges} data-aos="fade-up">
       <div className={Styles.image}>
         <Image src={decoration} width={650} height={75} alt={""} />
       </div>
@@ -31,6 +31,7 @@ function Colleges() {
       <br />
       <div
         className={!clamped ? Styles.img_wrapper_clamped : Styles.img_wrapper}
+        data-aos="fade-up"
       >
         {imgArr.map((img, index) => {
           return (

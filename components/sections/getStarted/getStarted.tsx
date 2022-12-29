@@ -40,7 +40,7 @@ function HowToGetStarted() {
   };
 
   return (
-    <section className={Styles.get_started}>
+    <section className={Styles.get_started} data-aos="fade-up">
       <h1>How to get started?</h1>
       <br />
       <p>

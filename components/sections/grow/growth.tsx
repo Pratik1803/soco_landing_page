@@ -6,10 +6,10 @@ import students from "../../../assets/images/grow-sec2/students.png";
 function Growth() {
   return (
     <section className={Styles.growth}>
-      <div className={Styles.image}>
+      <div className={Styles.image} data-aos="fade-up">
         <Image src={students} height={2000} width={3000} alt="" />
       </div>
-      <div className={Styles.content}>
+      <div className={Styles.content} data-aos="fade-up">
         <h1>We help you grow!</h1>
         <br />
         <p>

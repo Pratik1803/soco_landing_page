@@ -34,7 +34,7 @@ function Objective() {
 
   function ObjCard({ img, desc }: IObjCardProps) {
     return (
-      <div className={Styles.obj_card}>
+      <div className={Styles.obj_card} data-aos="fade-up">
         <div className={Styles.image}>
           <Image src={img} height={3000} width={4000} alt={""} />
         </div>
@@ -45,7 +45,7 @@ function Objective() {
 
   return (
     <section className={Styles.objective}>
-      <div className={Styles.content}>
+      <div className={Styles.content} data-aos="fade-up">
         <h4>Objective</h4>
         <h1>
           Multiple problems,
@@ -61,7 +61,7 @@ function Objective() {
           <BlueButton title="Get Started" link={"#"} />
         </div>
       </div>
-      <div className={Styles.images}>
+      <div className={Styles.images} data-aos="fade-up">
         <div className={Styles.img_bg}></div>
         <div className={Styles.imgs}>
           <div className={Styles.row1}>

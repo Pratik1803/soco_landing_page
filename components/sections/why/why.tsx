@@ -45,7 +45,7 @@ function Why() {
 
   const WhyCard = ({ src, title, desc }: IWhyCard) => {
     return (
-      <div className={Styles.img_card}>
+      <div className={Styles.img_card} data-aos="fade-up">
         <div className={Styles.image}>
           <Image src={src} width={112} height={124} alt={""} />
         </div>
@@ -58,8 +58,8 @@ function Why() {
   };
 
   return (
-    <section className={Styles.why}>
-      <div className={Styles.video}>
+    <section className={Styles.why} data-aos="fade-up">
+      <div className={Styles.video} data-aos="fade-up">
         <div className={Styles.video_bg}></div>
         <div className={Styles.video_wrapper}>
           <YouTube
@@ -70,7 +70,7 @@ function Why() {
           />
         </div>
       </div>
-      <div className={Styles.content}>
+      <div className={Styles.content} data-aos="fade-up">
         <h1>Why us?</h1>
         <br />
         <p>

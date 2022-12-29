@@ -59,7 +59,7 @@ function OneForAll() {
   };
 
   return (
-    <section className={Styles.one_for_all}>
+    <section className={Styles.one_for_all} data-aos="fade-up">
       {imgsArr.map((ele, index) => (
         <Portrait key={index} index={index} src={ele} />
       ))}

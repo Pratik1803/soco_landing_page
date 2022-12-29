@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import React, { useState } from "react";
 import Styles from "./header.module.scss";
+import "aos/dist/aos.css";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ function Header() {
   }
 
   return (
-    <header className={Styles.header}>
+    <header className={Styles.header} data-aos="fade-up">
       <nav>
         <Link href={"#"} passHref className={Styles.logo}>
           <h3>thesocialcomment</h3>
