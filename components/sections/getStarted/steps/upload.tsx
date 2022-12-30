@@ -5,36 +5,23 @@ import s2 from "../../../../assets/images/htgs/s2.png";
 import s2_5 from "../../../../assets/images/htgs/s2_5.png";
 import BlueButton from "../../../../widgets/blueButton/BlueButton";
 import { Stack } from "@mui/material";
+import Heading1 from "../../../../widgets/text_tags/heading1/Heading1";
 
 function Upload() {
   const [active1, setActive1] = useState(true);
-  let interval: string | number | NodeJS.Timer | undefined;
 
   function toggleActive1(value: boolean) {
-    clearInterval(interval);
     setActive1(value);
-    // interval = setInterval(() => {
-    //   setActive1((prev) => !prev);
-    // }, 5000);
   }
-
-  useEffect(() => {
-    interval = setInterval(() => {
-      setActive1((prev) => !prev);
-    }, 5000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
   return (
     <section className={Styles.upload}>
       <div className={Styles.content}>
-        <h1>
+        <Heading1>
           {active1
             ? "Upload all kinds of academic work"
             : "Publish within seconds"}
-        </h1>
+        </Heading1>
         <br />
         <p>
           {active1

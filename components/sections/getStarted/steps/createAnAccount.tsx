@@ -3,12 +3,13 @@ import React from "react";
 import BlueButton from "../../../../widgets/blueButton/BlueButton";
 import Styles from "./steps.module.scss";
 import s1 from "../../../../assets/images/htgs/s1.png";
+import Heading1 from "../../../../widgets/text_tags/heading1/Heading1";
 
 function CreateAnAccount() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <h1>Create or log into your account.</h1>
+        <Heading1>Create or log into your account.</Heading1>
         <br />
         <p>
           The first step is to create or log into your account using valid

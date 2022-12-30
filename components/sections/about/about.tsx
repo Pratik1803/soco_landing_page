@@ -4,6 +4,7 @@ import decoration from "../../../assets/images/about/decoration.png";
 import Image from "next/image";
 import OneForAll from "./one-for-all/oneForAll";
 import Integrations from "./integrations/integrations";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
 
 function About() {
   const [clamped, setClamped] = useState(false);
@@ -24,10 +25,10 @@ function About() {
           </div>
         </div>
         <div className={Styles.content} data-aos="fade-up">
-          <h1>
+          <Heading1>
             We are a small and young team from India passionate about the
             future.
-          </h1>
+          </Heading1>
           <br />
           <span>
             <p className={clamped ? "" : Styles.clamped}>

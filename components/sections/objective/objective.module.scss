@@ -5,7 +5,7 @@
   align-items: center;
   padding: var(--padding-sec-y) 0;
   .content {
-    width: 40%;
+    width: 35%;
     .btn {
       margin-top: 5vh;
     }
@@ -17,7 +17,7 @@
       right: -5vw;
       top: 25%;
       background: var(--gradient-violet);
-      width: calc(120% + 5vw);
+      width: calc(110% + 5vw);
       height: 50%;
       z-index: -1;
       border-radius: 20px 0px 0px 20px;
@@ -47,10 +47,11 @@
         align-items: center;
         gap: 20px;
         .obj_card {
-          width: 20vw;
+          width: 25vw;
+          min-height: 15vw;
           border-radius: 20px;
           box-shadow: var(--box-shdw-1);
-          padding: 10px;
+          padding: 5vh 0 2.5vh 0;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -60,16 +61,18 @@
           p {
             width: 90%;
             text-align: center;
-            padding: 15px 0;
+            margin-top: 20px;
             font-size: 16px;
           }
           .image {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: var(--soco-blue);
+            width: 50%;
             img {
-              width: 8vw;
-              height: 8vw;
+              width: 100%;
+              height: auto;
               object-fit: contain;
             }
           }
@@ -82,7 +85,7 @@
 @media only screen and (max-width: 850px) {
   .objective {
     flex-direction: column;
-    border-top: 1px solid var(--h-ul);
+    // border-top: 1px solid var(--h-ul);
     .content {
       width: 100%;
       text-align: center;
@@ -102,6 +105,8 @@
           .obj_card {
             width: 100%;
             .image {
+              background-color: transparent;
+              width: 75%;
               img {
                 width: 80%;
                 height: auto;

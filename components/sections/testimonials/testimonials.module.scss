@@ -5,6 +5,7 @@
   padding: var(--padding-sec-y) var(--padding-x);
   background: var(--gradient-yellow);
   text-align: center;
+  margin: var(--padding-sec-y) 0;
   span {
     display: flex;
     justify-content: center;
@@ -51,6 +52,17 @@
         .stud_detail {
           p {
             font-size: var(--fs-sec);
+          }
+          .stars {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+              box-shadow: none;
+              width: 25px;
+              height: auto;
+              object-fit: contain;
+            }
           }
         }
       }
@@ -110,7 +122,7 @@
       .t_card,
       .t_card_expanded {
         width: 90vw;
-        height: 360px;
+        height: 380px;
         margin-bottom: 30px;
         br {
           display: none;
@@ -125,6 +137,9 @@
             }
             p {
               font-size: 12px;
+            }
+            .stars {
+              justify-content: center;
             }
           }
         }

@@ -5,12 +5,13 @@ import Publish from "./steps/publish";
 import Select from "./steps/select";
 import Upload from "./steps/upload";
 import AddIcon from "@mui/icons-material/Add";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
 
 function HowToGetStarted() {
   const [active, setActive] = useState("sec1");
 
   function toggleActive(newActive: string) {
-    if (active == newActive) {
+    if (active == newActive && window.innerWidth <= 850) {
       return setActive("");
     }
     setActive(newActive);
@@ -58,7 +59,7 @@ function HowToGetStarted() {
 
   return (
     <section className={Styles.get_started} data-aos="fade-up">
-      <h1>How to get started?</h1>
+      <Heading1>How to get started?</Heading1>
       <br />
       <p>
         Now your projects, works, experiences and even your small contributions
@@ -77,7 +78,7 @@ function HowToGetStarted() {
                 toggleActive("sec1");
               }}
             >
-              <p>Create an Account</p>
+              <p>Create an account</p>
               <AddIcon />
             </div>
             <div className={Styles.mob_ver}>

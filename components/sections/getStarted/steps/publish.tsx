@@ -3,16 +3,17 @@ import React from "react";
 import BlueButton from "../../../../widgets/blueButton/BlueButton";
 import Styles from "./steps.module.scss";
 import s4 from "../../../../assets/images/htgs/s4.png";
+import Heading1 from "../../../../widgets/text_tags/heading1/Heading1";
 
 function Publish() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <h1>Share your magic.</h1>
+        <Heading1>Share your magic.</Heading1>
         <br />
         <p>
-          Share your work with eecruiters and companies and create your brand
-          image in their mind
+          Share your work with recruiters and companies and create your brand
+          image in their mind.
         </p>
 
         <ul>

@@ -34,6 +34,10 @@
       .youtube {
         border-radius: 10px;
         height: 50vh;
+        width: 90%;
+        border-radius: 20px !important;
+        overflow: hidden;
+        box-shadow: var(--box-shdw-1);
       }
     }
   }

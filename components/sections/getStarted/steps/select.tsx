@@ -3,12 +3,13 @@ import React from "react";
 import BlueButton from "../../../../widgets/blueButton/BlueButton";
 import Styles from "./steps.module.scss";
 import s3 from "../../../../assets/images/htgs/s3.png";
+import Heading1 from "../../../../widgets/text_tags/heading1/Heading1";
 
 function Select() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <h1>15+ Portfolio themes</h1>
+        <Heading1>15+ Portfolio themes</Heading1>
         <br />
         <p>
           Show your proof of work through these elegant portfolio designs and

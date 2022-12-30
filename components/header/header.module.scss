@@ -4,8 +4,16 @@
   justify-content: space-between;
   align-items: center;
   margin: 1.5vh var(--padding-x);
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
+  padding: 10px 0px 20px 0px;
   border-bottom: 1px solid var(--h-ul);
+  button {
+    background: var(--btn-bg-blue);
+    color: #fff;
+    text-transform: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+  }
   nav {
     display: flex;
     gap: 5vw;
@@ -56,8 +64,9 @@
   .header {
     position: relative;
     z-index: 3;
-    padding: 15px 0;
-    padding-top: 0;
+    padding: 10px 0 10px 0;
+    border-bottom: none;
+    // padding: 15px 0 15px 0;
 
     nav {
       position: relative;
@@ -93,11 +102,12 @@
         }
       }
       ul {
-        height: 400px;
+        height: 340px;
         transition: 0.3s height ease-in-out;
         overflow: hidden;
         position: absolute;
         box-shadow: var(--box-shdw-1);
+        border-radius: 10px;
         // top: 5vh;
         bottom: 0;
         right: 0px;
@@ -109,7 +119,7 @@
           background-color: #fff;
           gap: 0px;
           align-items: flex-start;
-          padding: 30px 20px;
+          padding: 20px;
           border-radius: 10px;
           a {
             padding: 10px;

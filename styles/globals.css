@@ -22,7 +22,7 @@
 
   /* Paddings and margins */
   --padding-x: 5vw; /* universal X-Axis padding  */
-  --padding-sec-y: 10vh; /* vertical padding for sections*/
+  --padding-sec-y: 7.5vh; /* vertical padding for sections*/
 
 
   /* For Decorations */
@@ -86,6 +86,8 @@ p,li, strong{
     --fs-sec: 16px; /* Font size for  content*/
     --fs-ter: 24px; 
 
-    --padding-sec-y: 7.5vh;
+    --padding-sec-y: 5vh;
+
+    --btn-shdw-blue: 0px 0px 10px rgba(0, 99, 255, 0.5);
   }
 }

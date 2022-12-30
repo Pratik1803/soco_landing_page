@@ -5,11 +5,13 @@ import p2 from "../../../assets/images/why/p2.png";
 import p3 from "../../../assets/images/why/p3.png";
 import Image, { StaticImageData } from "next/image";
 import YouTube from "react-youtube";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
+import Heading3 from "../../../widgets/text_tags/heading3/Heading3";
 
 function Why() {
   const opts = {
     height: "100%",
-    width: "90%",
+    width: "100%",
     playerVars: {
       autoplay: 1,
     },
@@ -50,7 +52,7 @@ function Why() {
           <Image src={src} width={112} height={124} alt={""} />
         </div>
         <div className={Styles.card_content}>
-          <h3>{title}</h3>
+          <Heading3>{title}</Heading3>
           <p>{desc}</p>
         </div>
       </div>
@@ -67,11 +69,12 @@ function Why() {
             videoId="VLC7GYM-dGM"
             opts={opts}
             onReady={onReady}
+            style={{ borderRadius: "20px" }}
           />
         </div>
       </div>
       <div className={Styles.content} data-aos="fade-up">
-        <h1>Why us?</h1>
+        <Heading1>Why us?</Heading1>
         <br />
         <p>
           SOCO is a fresh new approach to how we attract opportunities for

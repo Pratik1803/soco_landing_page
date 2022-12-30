@@ -12,6 +12,7 @@ import c7 from "../../../assets/images/colleges/c7.png";
 import c8 from "../../../assets/images/colleges/c8.png";
 import c9 from "../../../assets/images/colleges/c9.png";
 import c10 from "../../../assets/images/colleges/c10.png";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
 
 function Colleges() {
   const imgArr = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10];
@@ -27,7 +28,7 @@ function Colleges() {
         <Image src={decoration} width={650} height={75} alt={""} />
       </div>
       <br />
-      <h1>Trusted by 35000+ students over 150+ colleges </h1>
+      <Heading1>Trusted by 35000+ students over 150+ colleges </Heading1>
       <br />
       <div
         className={!clamped ? Styles.img_wrapper_clamped : Styles.img_wrapper}

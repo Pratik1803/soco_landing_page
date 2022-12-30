@@ -9,7 +9,7 @@
     height: 50vh;
     position: relative;
     video {
-      width: 75%;
+      width: 90%;
       box-shadow: var(--box-shdw-1);
       z-index: 2;
       position: relative;
@@ -84,7 +84,7 @@
 @media only screen and (max-width: 850px) {
   .how_it_works {
     flex-direction: column-reverse;
-    border-top: 1px solid var(--h-ul);
+    // border-top: 1px solid var(--h-ul);
     .video {
       display: none;
     }

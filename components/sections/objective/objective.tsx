@@ -6,6 +6,7 @@ import boi1 from "../../../assets/images/objective/boi1.png";
 import boi2 from "../../../assets/images/objective/boi2.png";
 import boi3 from "../../../assets/images/objective/boi3.png";
 import boi4 from "../../../assets/images/objective/boi4.png";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
 
 function Objective() {
   interface IObjCardProps {
@@ -36,7 +37,7 @@ function Objective() {
     return (
       <div className={Styles.obj_card} data-aos="fade-up">
         <div className={Styles.image}>
-          <Image src={img} height={3000} width={4000} alt={""} />
+          <Image src={img} height={340} width={600} alt={""} />
         </div>
         <p>{desc}</p>
       </div>
@@ -47,10 +48,10 @@ function Objective() {
     <section className={Styles.objective}>
       <div className={Styles.content} data-aos="fade-up">
         <h4>Objective</h4>
-        <h1>
+        <Heading1>
           Multiple problems,
           <br /> single solution.
-        </h1>
+        </Heading1>
         <br />
         <p>
           thesocialcomment is all about providing convenience to your greatness.

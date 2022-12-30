@@ -10,6 +10,7 @@ import am from "../../../assets/images/testimonials/NikhilS.jpg";
 import ap from "../../../assets/images/testimonials/SiddarthS.jpg";
 import ks from "../../../assets/images/testimonials/KanikaS.jpg";
 import YouTube from "react-youtube";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
 
 interface IStudentCard {
   src: StaticImageData;
@@ -34,7 +35,7 @@ const students: IStudentCard[] = [
 function Hero() {
   const opts = {
     height: "100%",
-    width: "90%",
+    width: "100%",
     playerVars: {
       autoplay: 1,
     },
@@ -70,10 +71,10 @@ function Hero() {
         <Image src={girl} alt="" width={280} height={350} />
       </div>
       <div className={Styles.content} data-aos="fade-up">
-        <h1>
+        <Heading1>
           Increase your chances of getting hired by 80% through proof of work
-        </h1>
-        <p>
+        </Heading1>
+        <p className={Styles.desc_hero}>
           Showcase your skills and work using our virtual portfolios to increase
           your chances of getting hired..
         </p>
@@ -86,8 +87,8 @@ function Hero() {
               onReady={onReady}
             />
           </div>
+          <br />
         </div>
-        <br />
 
         <Stack
           direction={"row"}

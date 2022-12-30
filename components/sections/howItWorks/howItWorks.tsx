@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
 import BlueButton from "../../../widgets/blueButton/BlueButton";
+import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
 import Styles from "./howItWorks.module.scss";
 // import hiw from "../../../assets/videos/howItWorks/hiw.mp4";
 
@@ -35,7 +36,7 @@ function HowItWorks() {
         </video>
       </div>
       <div className={Styles.content} data-aos="fade-up">
-        <h1>How it all works?</h1>
+        <Heading1>How it all works?</Heading1>
         <br />
         <p>
           This is exactly how you may increase your chances of getting hired by
