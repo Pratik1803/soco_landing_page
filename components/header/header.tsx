@@ -18,8 +18,7 @@ function Header() {
     <header className={Styles.header}>
       <nav>
         <Link href={"#"} passHref className={Styles.logo}>
-          {/* <h3>thesocialcomment</h3> */}
-          <Image src={logo} width={211} height={25} alt={""} />
+          <Image src={logo} width={211} height={50} alt={""} />
         </Link>
         <div
           className={`${Styles.hamburger} ${open ? Styles.open : ""}`}

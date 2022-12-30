@@ -106,13 +106,16 @@
 
 @media only screen and (max-width: 850px) {
   .hero {
-    background-image: url("../../../assets/images/hero/hero_mob.png");
+    background-image: none;
     height: fit-content;
     min-height: 80vh;
     width: 100%;
-    border-bottom: 1px solid var(--h-ul);
+    // border-bottom: 1px solid var(--h-ul);
     position: relative;
-    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: var(--padding-sec-y);
     .boi,
     .girl {
       display: none;
@@ -121,6 +124,7 @@
     .growth {
       animation: wave 3s ease-in-out infinite;
       z-index: 2;
+      display: none;
       img {
         width: 100px;
         height: auto;
@@ -134,51 +138,78 @@
       top: 2vh;
       animation-delay: 0.3s;
     }
+    .video {
+      display: block;
+      margin-top: 20px;
+      .video_wrapper {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .youtube {
+          border-radius: 10px;
+          height: 50vw;
+          width: 90vw;
+          border-radius: 20px !important;
+          overflow: hidden;
+          box-shadow: var(--box-shdw-1);
+        }
+      }
+    }
     .content {
       width: 100%;
-      top: 55%;
+      aspect-ratio: 300 / 275;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none !important;
       z-index: 2;
+      background-image: url(../../../assets/images/hero/mob_bg.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      // background-color: red;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
       h1 {
         font-size: var(--fs-ter);
       }
-      .video {
-        display: block;
-        margin-top: 20px;
-        .video_wrapper {
-          margin-top: 10px;
-          .youtube {
-            border-radius: 10px;
-            height: 55vw;
-            width: 90vw;
-            border-radius: 20px !important;
-            overflow: hidden;
-            box-shadow: var(--box-shdw-1);
-          }
-        }
-      }
+
       button {
-        padding: 10px 20px;
+        min-width: 200px;
+        width: 60%;
+        padding: 15px 15px;
+        // transform: translateY(-60%);
       }
       p {
         width: 100%;
         margin: 10px 0;
-        display: none;
+        display: none !important;
       }
+
       .students {
         display: none;
       }
     }
     &::after {
       content: "";
-      position: absolute;
-      top: 0px;
-      bottom: auto;
-      left: 50%;
-      backdrop-filter: blur(7.5px);
-      background-color: rgba(255, 255, 255, 0.4);
-      height: 100%;
-      width: 100%;
-      border-radius: 0;
+      // position: absolute;
+      // top: 0px;
+      // bottom: auto;
+      // left: 50%;
+      // backdrop-filter: blur(7.5px);
+      // background-color: rgba(255, 255, 255, 0.4);
+      // height: 100%;
+      // width: 100%;
+      // border-radius: 0;
+      display: none;
     }
   }
 }

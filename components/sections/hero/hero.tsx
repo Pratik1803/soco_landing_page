@@ -11,6 +11,7 @@ import ap from "../../../assets/images/testimonials/SiddarthS.jpg";
 import ks from "../../../assets/images/testimonials/KanikaS.jpg";
 import YouTube from "react-youtube";
 import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
+import mob_bg from "../../../assets/images/hero/mob_bg.png";
 
 interface IStudentCard {
   src: StaticImageData;
@@ -71,6 +72,7 @@ function Hero() {
         <Image src={girl} alt="" width={280} height={350} />
       </div>
       <div className={Styles.content} data-aos="fade-up">
+        {/* <Image src={mob_bg} width={500} height={350} alt={""} /> */}
         <Heading1>
           Increase your chances of getting hired by 80% through proof of work
         </Heading1>
@@ -78,17 +80,6 @@ function Hero() {
           Showcase your skills and work using our virtual portfolios to increase
           your chances of getting hired..
         </p>
-        <div className={Styles.video}>
-          <div className={Styles.video_wrapper}>
-            <YouTube
-              className={Styles.youtube}
-              videoId="VLC7GYM-dGM"
-              opts={opts}
-              onReady={onReady}
-            />
-          </div>
-          <br />
-        </div>
 
         <Stack
           direction={"row"}
@@ -98,14 +89,27 @@ function Hero() {
           marginY={2}
         >
           <Button className={Styles.get_started}>Get Started</Button>
-          <Button className={Styles.learn_more}>Learn More</Button>
+          {/* <Button className={Styles.learn_more}>Learn More</Button> */}
         </Stack>
+
         <br />
         <div className={Styles.students}>
           {students.map((ele, index) => (
             <StudentCard key={index} src={ele.src} name={ele.name} />
           ))}
           <p>+35000 Students</p>
+        </div>
+      </div>
+      <div className={Styles.video} data-aos="fade-up">
+        <div className={Styles.video_bg}></div>
+        <div className={Styles.video_wrapper}>
+          <YouTube
+            className={Styles.youtube}
+            videoId="VLC7GYM-dGM"
+            opts={opts}
+            onReady={onReady}
+            style={{ borderRadius: "20px" }}
+          />
         </div>
       </div>
     </div>
