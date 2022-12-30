@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 import Styles from "./wrapper.module.scss";
@@ -9,6 +9,13 @@ type Props = {
 };
 
 function Wrapper({ children }: Props) {
+  const [openHam, setOpenHam] = useState(false);
+
+  function toggleHam() {
+    if (window.innerWidth <= 850) {
+      setOpenHam((prev) => false);
+    }
+  }
   return (
     <>
       <Head>
@@ -69,8 +76,8 @@ function Wrapper({ children }: Props) {
         />
         {/* All meta tags req for seo will come here */}
       </Head>
-      <Header />
-      <div className={Styles.container}>
+      <Header openHam={openHam} setOpenHam={setOpenHam} />
+      <div className={Styles.container} onClick={toggleHam}>
         <main>{children}</main>
       </div>
       <Footer />
