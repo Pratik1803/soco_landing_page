@@ -73,9 +73,11 @@ function Hero() {
       </div>
       <div className={Styles.content} data-aos="fade-up">
         {/* <Image src={mob_bg} width={500} height={350} alt={""} /> */}
-        <Heading1>
-          Increase your chances of getting hired by 80% through proof of work
-        </Heading1>
+        <span>
+          <Heading1>
+            Increase your chances of getting hired by 80% through proof of work
+          </Heading1>
+        </span>
         <p className={Styles.desc_hero}>
           Showcase your skills and work using our virtual portfolios to increase
           your chances of getting hired..
