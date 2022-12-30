@@ -9,7 +9,7 @@ function CreateAnAccount() {
   return (
     <section className={Styles.createAnAccount}>
       <div className={Styles.content}>
-        <Heading1>Create or log into your account.</Heading1>
+        <Heading1>Create or log into your account</Heading1>
         <br />
         <p>
           The first step is to create or log into your account using valid
@@ -18,7 +18,7 @@ function CreateAnAccount() {
         <ul>
           <li>Go to Login/Signup Portal</li>
           <li>Fill the necessary details</li>
-          <li>Accept the Terms & Service and hit Create button</li>
+          <li>Accept the Terms & Service and hit create button</li>
         </ul>
         <BlueButton title="Create Your Profile" link="#" />
       </div>

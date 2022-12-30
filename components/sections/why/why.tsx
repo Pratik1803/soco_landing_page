@@ -40,7 +40,7 @@ function Why() {
     },
     {
       title: "Proof of work, fullstop.",
-      desc: "Manage your work and time through a single window",
+      desc: "Manage your work and time through a single window.",
       src: p3,
     },
   ];

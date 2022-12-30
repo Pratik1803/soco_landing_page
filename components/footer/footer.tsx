@@ -8,6 +8,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import AddIcon from "@mui/icons-material/Add";
+import Image from "next/image";
+import logo from "../../assets/images/logo_white.png";
 
 function Footer() {
   const [open, setOpen] = useState("");
@@ -20,11 +22,11 @@ function Footer() {
   return (
     <footer className={Styles.footer}>
       <section className={Styles.sec1}>
-        <h2>thesocialcomment</h2>
+        <Image src={logo} width={535} height={52} alt={""} />
         <br />
         <p>
           thesocialcomment is a platform which helps students to increase their
-          exposure and chances of getting hired
+          exposure and chances of getting hired.
         </p>
         <br />
         <p>© 2023 thesocialcomment. All rights reserved</p>
@@ -60,6 +62,12 @@ function Footer() {
             </Link>
             <Link href="#" passHref>
               <p>Mobile App</p>
+            </Link>
+            <Link
+              href="https://www.instagram.com/thesocialcomment/reels/"
+              passHref
+            >
+              <p>Memes</p>
             </Link>
           </ul>
         </nav>

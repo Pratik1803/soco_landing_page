@@ -13,6 +13,12 @@
   }
   .sec1 {
     width: 25%;
+    img {
+      width: 60%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
   }
   .sec1,
   .sec2,
@@ -48,7 +54,11 @@
 @media only screen and (max-width: 850px) {
   .footer {
     gap: 5vh;
-
+    .sec1 {
+      img {
+        width: 50%;
+      }
+    }
     .sec2,
     .sec3,
     .sec4 {

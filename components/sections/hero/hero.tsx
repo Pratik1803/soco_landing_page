@@ -80,7 +80,7 @@ function Hero() {
         </span>
         <p className={Styles.desc_hero}>
           Showcase your skills and work using our virtual portfolios to increase
-          your chances of getting hired..
+          your chances of getting hired.
         </p>
 
         <Stack

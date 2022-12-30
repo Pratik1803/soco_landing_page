@@ -1,0 +1,42 @@
+.memes {
+  width: 100%;
+  min-height: 90vh;
+  //   background-color: red;
+  margin-bottom: var(--padding-sec-y);
+  padding-top: 5vh;
+  .head {
+    width: 100%;
+    text-align: center;
+    p {
+      text-decoration: underline;
+    }
+  }
+  .meme_wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--padding-sec-y);
+    gap: 5vw;
+    iframe {
+      aspect-ratio: 3/4;
+      width: 25%;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .memes {
+    .meme_wrapper {
+      iframe {
+        width: 90%;
+        min-width: 280px;
+      }
+    }
+  }
+}

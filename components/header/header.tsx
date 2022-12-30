@@ -22,7 +22,7 @@ function Header({ openHam, setOpenHam }: IProps) {
   return (
     <header className={Styles.header}>
       <nav>
-        <Link href={"#"} passHref className={Styles.logo}>
+        <Link href={"/"} passHref className={Styles.logo}>
           <Image src={logo} width={211} height={50} alt={""} />
         </Link>
         <div
@@ -33,7 +33,7 @@ function Header({ openHam, setOpenHam }: IProps) {
           <div className={`${Styles.line} ${Styles.line2}`}></div>
           <div className={`${Styles.line} ${Styles.line3}`}></div>
         </div>
-        <ul style={{ height: openHam ? "340px" : "0px" }}>
+        <ul style={{ height: openHam ? "46vh" : "0px" }}>
           <div className={Styles.link_wrapper}>
             <Link href={"#"} passHref onClick={toggle}>
               <li>About</li>

@@ -17,11 +17,11 @@ function Objective() {
   const cardData = [
     {
       img: boi1,
-      desc: "A platform to represent yourself through your work",
+      desc: "A platform to represent yourself through your work.",
     },
     {
       img: boi2,
-      desc: "Get career advice from industry professionals and mentors.",
+      desc: "Intra-university and college collab with students.",
     },
     {
       img: boi3,
@@ -29,7 +29,7 @@ function Objective() {
     },
     {
       img: boi4,
-      desc: "Capture the Imagination of Recruiter through Proof of work.",
+      desc: "Capture the imagination of recruiter through proof of work.",
     },
   ];
 

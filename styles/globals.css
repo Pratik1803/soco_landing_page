@@ -88,6 +88,6 @@ p,li, strong{
 
     --padding-sec-y: 5vh;
 
-    --btn-shdw-blue: 0px 0px 10px rgba(0, 99, 255, 0.5);
+    --btn-shdw-blue: 0px 0px 5px rgba(0, 99, 255, 0.5);
   }
 }

@@ -13,43 +13,43 @@ function Pricing() {
     {
       code: "Free",
       name: "Free",
-      price: "₹0.00",
+      price: "free",
       pros: [
         "Reference site about Lorem Ipsum, giving information.",
         "Reference site about Lorem Ipsum, giving information.",
         "Reference site about Lorem Ipsum, giving information.",
       ],
     },
-    {
-      code: "Newbie",
-      name: "1 Month",
-      price: "₹150.00",
-      pros: [
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-      ],
-    },
-    {
-      code: "Popular",
-      name: "3 Months",
-      price: "₹350.00",
-      pros: [
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-      ],
-    },
-    {
-      code: "Heat",
-      name: "6 Months",
-      price: "₹600.00",
-      pros: [
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-      ],
-    },
+    // {
+    //   code: "Newbie",
+    //   name: "1 Month",
+    //   price: "₹150.00",
+    //   pros: [
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //   ],
+    // },
+    // {
+    //   code: "Popular",
+    //   name: "3 Months",
+    //   price: "₹350.00",
+    //   pros: [
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //   ],
+    // },
+    // {
+    //   code: "Heat",
+    //   name: "6 Months",
+    //   price: "₹600.00",
+    //   pros: [
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //     "Reference site about Lorem Ipsum, giving information.",
+    //   ],
+    // },
     {
       code: "Pro",
       name: "12 Months",

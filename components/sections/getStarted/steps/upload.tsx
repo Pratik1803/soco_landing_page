@@ -31,9 +31,9 @@ function Upload() {
 
         {active1 ? (
           <ul>
-            <li>Be a Blogger and upload Blogs and Articles</li>
-            <li>Be an Artist and upload your Artwork and Skill Video</li>
-            <li>Be an Enthusiast and upload your Presentations</li>
+            <li>Be a blogger and upload blogs and articles</li>
+            <li>Be an artist and upload your artwork and skill video</li>
+            <li>Be an enthusiast and upload your presentations</li>
           </ul>
         ) : (
           <ul>

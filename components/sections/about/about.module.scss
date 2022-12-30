@@ -59,15 +59,16 @@
           }
         }
         .image {
-          position: absolute;
-          top: 10vh;
-          left: 50%;
-          transform: translateX(-50%);
-          opacity: 0.5;
-          img {
-            width: 50vw;
-            height: auto;
-          }
+          // position: absolute;
+          // top: 10vh;
+          // left: 50%;
+          // transform: translateX(-50%);
+          // opacity: 0.5;
+          display: none;
+          // img {
+          //   width: 50vw;
+          //   height: auto;
+          // }
         }
       }
       .content {

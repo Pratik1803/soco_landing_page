@@ -7,10 +7,10 @@ import Styles from "./howItWorks.module.scss";
 
 function HowItWorks() {
   const steps = [
-    "Lorem ipsum dolor sit amet.",
-    "Lorem ipsum dolor sit amet.",
-    "Lorem ipsum dolor sit amet.",
-    "Lorem ipsum dolor sit amet.",
+    "Come up with your unique content.",
+    "Decide on your preferred portfolio theme.",
+    "Increase your exposure by sharing it on different platforms.",
+    "Looking for more? Click Read more.",
   ];
 
   interface IStepCard {
