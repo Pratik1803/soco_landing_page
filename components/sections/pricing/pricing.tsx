@@ -14,10 +14,13 @@ function Pricing() {
       code: "Free",
       name: "Free",
       price: "free",
+      btnTitle: "Subscribe",
       pros: [
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
+        "Multiple Postings.",
+        "Networking",
+        "Carrer Guidance Tool",
+        "Internship Opportunities",
+        "Monetization",
       ],
     },
     // {
@@ -53,11 +56,14 @@ function Pricing() {
     {
       code: "Pro",
       name: "12 Months",
-      price: "₹1000.00",
+      price: "₹2500.00",
+      btnTitle: "View more",
       pros: [
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
-        "Reference site about Lorem Ipsum, giving information.",
+        "Multiple AI based Portfolio Themes",
+        "Virtual Desk",
+        "Analytics and Insights",
+        "Niche Cover Letters",
+        "Skill-Based Resume",
       ],
     },
   ];
@@ -69,6 +75,7 @@ function Pricing() {
     pros: string[];
     code: string;
     active: number | undefined;
+    btnTitle: string;
   }
 
   // ${data.index == 1 ? Styles.blue : ""}
@@ -97,7 +104,7 @@ function Pricing() {
         </ul>
         <br />
         <div className={Styles.btn}>
-          <BlueButton link="#" title="Subscribe" />
+          <BlueButton link="#" title={data.btnTitle} />
         </div>
         <div className={Styles.more_btn}>
           <Button
@@ -131,6 +138,7 @@ function Pricing() {
                 pros={ele.pros}
                 active={activePricing}
                 code={ele.code}
+                btnTitle={ele.btnTitle}
               />
             );
           })}

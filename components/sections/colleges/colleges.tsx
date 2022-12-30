@@ -28,7 +28,7 @@ function Colleges() {
         <Image src={decoration} width={650} height={75} alt={""} />
       </div>
       <br />
-      <Heading1>Trusted by 35000+ students over 150+ colleges </Heading1>
+      <Heading1>Trusted by 15000+ students over 50+ colleges </Heading1>
       <br />
       <div
         className={!clamped ? Styles.img_wrapper_clamped : Styles.img_wrapper}

@@ -6,6 +6,10 @@
   src: url(../assets/SIFONN_BASIC.otf);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root{
   --fc-pri: #2B2B2B;  /* Font color for headings */
   --fc-sec: #808598;  /* Font color for text */

@@ -6,8 +6,10 @@ import Select from "./steps/select";
 import Upload from "./steps/upload";
 import AddIcon from "@mui/icons-material/Add";
 import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
+import { useRouter } from "next/router";
 
 function HowToGetStarted() {
+  const router = useRouter();
   const [active, setActive] = useState("sec1");
 
   function toggleActive(newActive: string) {
@@ -58,7 +60,11 @@ function HowToGetStarted() {
   }, []);
 
   return (
-    <section className={Styles.get_started} data-aos="fade-up">
+    <section
+      className={Styles.get_started}
+      data-aos="fade-up"
+      id="howtogetstarted"
+    >
       <Heading1>How to get started?</Heading1>
       <br />
       <p>

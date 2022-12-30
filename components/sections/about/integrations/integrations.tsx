@@ -9,7 +9,7 @@ function Integrations() {
     <section className={Styles.integrations} data-aos="fade-up">
       <Heading1>Integrations</Heading1>
       <br />
-      <p>Share and upload your portfolio seamlessly on all your job portals.</p>
+      <p>Share and upload your portfolio seamlessly on all your job portal.</p>
       <br />
       <div className={Styles.image}>
         <Image src={icons} height={404} width={445} alt={""} />

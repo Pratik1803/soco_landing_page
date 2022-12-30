@@ -6,12 +6,11 @@ import growth from "../../../assets/images/hero/growth.png";
 import boi from "../../../assets/images/hero/boi.png";
 import girl from "../../../assets/images/hero/girl.png";
 import { Button, Stack } from "@mui/material";
-import am from "../../../assets/images/testimonials/NikhilS.jpg";
-import ap from "../../../assets/images/testimonials/SiddarthS.jpg";
+import ns from "../../../assets/images/testimonials/NischayaS.jpg";
+import sj from "../../../assets/images/testimonials/ShresthJ.jpg";
 import ks from "../../../assets/images/testimonials/KanikaS.jpg";
 import YouTube from "react-youtube";
 import Heading1 from "../../../widgets/text_tags/heading1/Heading1";
-import mob_bg from "../../../assets/images/hero/mob_bg.png";
 
 interface IStudentCard {
   src: StaticImageData;
@@ -20,12 +19,12 @@ interface IStudentCard {
 
 const students: IStudentCard[] = [
   {
-    src: am,
-    name: "Akshat Mehta",
+    src: ns,
+    name: "Nischaya Sharma",
   },
   {
-    src: ap,
-    name: "Anish Patel",
+    src: sj,
+    name: "Shresth Jain",
   },
   {
     src: ks,
@@ -99,7 +98,7 @@ function Hero() {
           {students.map((ele, index) => (
             <StudentCard key={index} src={ele.src} name={ele.name} />
           ))}
-          <p>+35000 Students</p>
+          <p>+15000 Students</p>
         </div>
       </div>
       <div className={Styles.video} data-aos="fade-up">

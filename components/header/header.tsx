@@ -1,11 +1,11 @@
 import { Button } from "@mui/material";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Styles from "./header.module.scss";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import logo from "../../assets/images/logo.png";
-import BlueButton from "../../widgets/blueButton/BlueButton";
+import ns from "../../assets/images/testimonials/NischayaS.jpg";
 
 interface IProps {
   openHam: boolean;
@@ -13,6 +13,7 @@ interface IProps {
 }
 
 function Header({ openHam, setOpenHam }: IProps) {
+  const [loggedIn, setLoggedIn] = useState(false);
   function toggle() {
     if (window.innerWidth <= 850) {
       setOpenHam((prev) => !prev);
@@ -44,7 +45,7 @@ function Header({ openHam, setOpenHam }: IProps) {
             <Link href={"#"} passHref onClick={toggle}>
               <li>Premium</li>
             </Link>
-            <Link href={"#"} passHref onClick={toggle}>
+            <Link href={"/?sec=sec3#howtogetstarted"} passHref onClick={toggle}>
               <li>Virtual Portfolio</li>
             </Link>
             <Link
@@ -61,7 +62,11 @@ function Header({ openHam, setOpenHam }: IProps) {
         </ul>
       </nav>
       <div className={Styles.loginSignup}>
-        <Button>Login</Button>
+        {loggedIn ? (
+          <Image src={ns} height={50} width={50} alt={""} />
+        ) : (
+          <Button>Login</Button>
+        )}
       </div>
     </header>
   );

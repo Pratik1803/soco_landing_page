@@ -1,5 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
+import React, { useState, createContext } from "react";
+
 import About from "../components/sections/about/about";
 import Colleges from "../components/sections/colleges/colleges";
 import HowToGetStarted from "../components/sections/getStarted/getStarted";
