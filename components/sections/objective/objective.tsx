@@ -47,7 +47,6 @@ function Objective() {
   return (
     <section className={Styles.objective}>
       <div className={Styles.content} data-aos="fade-up">
-        <h4>Objective</h4>
         <Heading1>
           Multiple problems,
           <br /> single solution.

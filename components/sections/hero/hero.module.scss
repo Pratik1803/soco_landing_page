@@ -6,6 +6,9 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  .video {
+    display: none;
+  }
   .portfolio,
   .growth {
     position: absolute;
@@ -44,9 +47,7 @@
     transform: translate(-50%, -50%) !important;
     width: 70%;
     text-align: center;
-    .video {
-      display: none;
-    }
+
     .desc_hero {
       width: 60%;
       margin: 5vh auto;
@@ -185,8 +186,10 @@
       button {
         min-width: 200px;
         width: 60%;
+        height: 7.5vh;
         padding: 15px 15px;
-        // transform: translateY(-60%);
+        position: absolute;
+        top: 72.5%;
       }
       p {
         width: 100%;
