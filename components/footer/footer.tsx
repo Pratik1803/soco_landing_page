@@ -66,6 +66,8 @@ function Footer() {
             <Link
               href="https://www.instagram.com/thesocialcomment/reels/"
               passHref
+              target={"_blank"}
+              referrerPolicy={"no-referrer"}
             >
               <p>Memes</p>
             </Link>
