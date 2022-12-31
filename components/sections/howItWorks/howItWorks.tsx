@@ -31,7 +31,7 @@ function HowItWorks() {
     <section className={Styles.how_it_works} data-aos="fade-up">
       <div className={Styles.video} data-aos="fade-up">
         <div className={Styles.bg}></div>
-        <video autoPlay loop controls muted>
+        <video autoPlay loop controls muted playsInline>
           <source src="https://d1ifbi2yr6p9bt.cloudfront.net/2156151/1671741749025-a996177b450592691c273565a9cbc2ad.mp4?v=1671722380000" />
         </video>
       </div>
@@ -44,7 +44,7 @@ function HowItWorks() {
         </p>
         <br />
         <div className={Styles.video_mob}>
-          <video autoPlay loop controls muted>
+          <video autoPlay loop controls muted playsInline>
             <source src="https://d1ifbi2yr6p9bt.cloudfront.net/2156151/1671741749025-a996177b450592691c273565a9cbc2ad.mp4?v=1671722380000" />
           </video>
         </div>
