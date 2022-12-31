@@ -57,9 +57,14 @@ function Footer() {
               <p>Careers</p>
             </Link>
 
-            <Link href="#" passHref>
+            <Link
+              href="/founders_story.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p>Founder&apos;s Story</p>
             </Link>
+
             <Link href="#" passHref>
               <p>Mobile App</p>
             </Link>

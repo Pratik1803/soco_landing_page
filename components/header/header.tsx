@@ -45,7 +45,7 @@ function Header({ openHam, setOpenHam }: IProps) {
             <Link href={"#"} passHref onClick={toggle}>
               <li>Premium</li>
             </Link>
-            <Link href={"/?sec=sec3#howtogetstarted"} passHref onClick={toggle}>
+            <Link href={"/#howtogetstarted"} passHref onClick={toggle}>
               <li>Virtual Portfolio</li>
             </Link>
             <Link
